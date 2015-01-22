@@ -1,0 +1,230 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<!-- Polish translation by Piotr Kwiliński 
+euvcp at hotmail dot com-->
+
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'>
+<b>Zakładka <I>Główny</I> jest miejscem definiowania operacji zmiany nazw.</b></font>
+<br>
+<font color='red'>Musisz wykonać zmiany by wykonać jakiekolwiek zmiany nazw.</font>
+<br>
+
+<br>
+[<a href='#buttons'>Przyciski</a>]&nbsp;&nbsp;
+[<a href='#operations'>Kolejność operacji</a>]<br>
+[<a href='#fields'>Pola zmiany nazw</a>:
+<a href='#search'>Szukaj & Zastąp/Modyfikuj/Przenieś</a> &nbsp;<a href='#insert'>Wstaw</a> &nbsp;<a href='#length'>Zmień długość</a>]
+<br>
+
+<a name='buttons'><P></a>
+<B>PRZYCISKI:</B><br>
+Przyciski działają poprzez wpisanie tekstu w pola tekstowe. Po naciśnięciu <I>Podgląd</I>, tekst zostanie przekształcony w działanie. Przykładowo aktywowanie pola <I>Przedrostek</I> i kliknięcie na przycisk <I>data</I> spowoduje pojawienie się tekstu ':data:' w polu tekstowym, co następnie zmieni się w dzisiejszą datę podczas zmiany nazw elementów. To pozwala na sporą elastyczność gdyż możesz miksować i porównywać działania i tekst. Więc jeśli chciałbyś mieć separator pomiędzy przedrostkiem a oryginalną nazwa pliku to po wciśnięciu przycisku wpisz'_', pole teraz zawiera ':data_:'. Zakładając, że dzisiaj jest 6 sierpień 1223r. to pliki zmienią nazwy na: 08-08-1223_pil.ext<br>
+Możesz wpisać tak wiele działań i tekstu jak chcesz - dopóki nazwa elementu nie będzie dłuższa niż 255 znaków. Więc coś takiego będzie jak najbardziej prawidłowe:<br>
+:liczba:_jakiś tekst_:data:_:czas:_:ścieżka:-:wykonawca:-:tytuł:
+</P>
+<br>
+
+<p>
+<img src='images/sub-dir_btn.png' border='0'><br>
+Przycisk <I>podfolder</I> wstawia separator katalogu w polu <I>katalog</I>.
+Pojawia się ona jako tekst ':/'. W innych polach nie powoduje zmian.
+</p>
+<br>
+
+<p>
+<img src='images/numbering_btn.png' border='0'><br>
+Przycisk <I>Numerowanie</I> wstawia sekwencję automatycznego numerowania. Domyślnie numerowanie rozpoczyna się od 1, rośnie o 1 i jest wypełniane 0 zależnie od najwyższej liczby (więc jeśli masz 100 elementów zostaną ponumerowane 001, 002, itd.). Te i inne ustawienia możesz zmienić w zakładce <I>Numerowanie</I>.
+</p>
+<br>
+
+<p>
+<img src='images/date_time_btn.png' border='0'><br>
+Przyciski <I>Data</I> i <I>Czas</I> wstawiają pre-formatowaną datę lub czas. Domyślny format daty to: MM-DD-RRRR, a czasu: GG.MM.SS
+(format 12 godzinny). Zostaną użyte bieżące czas i data. By zmienić ustawienia użyj zakładki <I>Data i Czas</I>.
+</p>
+<br>
+
+<p>
+<img src='images/id3_btn.png' border='0'><br>
+Przycisk <I>ID3</I> wstawi informację ID3 uzyskaną z pliku .mp3. Mówię 'pliku' ponieważ program "zajrzy" do każdego pliku i pobierze z niego informacje. Możesz wybrać jakie informacje mają być pobierane używając rozwijanego menu. Jeśli plik mp3 nie zawiera informacji, które chcesz wstawić do nazwy to zostanie wstawione puste miejsce. Pliki i foldery innych rodzajów są ignorowane.
+<HR width='50%' align='center'>
+
+<a name='operations'><P></a>
+<B>KOLEJNOŚĆ OPERACJI:</B><br>
+Kolejność w jakiej aplikacja wykonuje poszczególne działania. Różni się od kolejności na interfejsie (ale jest bardziej logiczna - czyż nie?) więc pomyślałem, że ją tutaj wymienię.
+<OL>
+<LI>Zmiana długości
+<LI>Szukaj i zastąp/Modyfikuj/Przenieś
+<LI>Przedrostek
+<LI>Przyrostek
+<LI>Rozszerzenie pliku
+<LI>Wstawianie
+</OL>
+</p>
+
+<HR width='50%' align='center'>
+
+<a name='fields'><P></a>
+<B>POLA ZMIANY NAZW:</B><br>
+To jest wewnętrzne serce Métamorphose. By wykonać jakąkolwiek zmianę nazw musisz zrobić zmiany tutaj. 
+</p>
+<P>
+<img src='images/operations.png' border='0'><br>
+Te pola zaznaczenia pozwalają ci wybrać jaka część elementu zostanie zmodyfikowana. Jeśli zaznaczono 'nazwa' przetwarzane będą nazwy plików i folderów. Jeśli zaznaczono 'rozszerzenie' zmiany obejmą rozszerzenie.
+</P>
+<br>
+
+<P>
+<img src='images/dir.png' border='0'><br>
+Ta funkcja pozwala na dodanie katalogu (folderu) w którym zostaną zapisane elementy ze zmienionymi nazwami. Można dodawać podfoldery przyciskiem <I>'podfolder'</I>. W polu tym możesz również używać pozostałych przycisków opisanych powyżej.
+</P>
+<br>
+
+<P>
+<img src='images/prefix.png' border='0'><br>
+Dodaje przedrostek do elementu.
+</P>
+<br>
+
+<P>
+<img src='images/suffix.png' border='0'><br>
+Dodaje przyrostek do elementu.
+</P>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='search'><P></a>
+<img src='images/search.png' border='0'><br>
+To jest potężne narzędzie do wyszukiwania elementów i ich modyfikacji. Większość działań wykonywanych jest z jego użyciem. Możesz wyszukać nazwy dla wpisanego tekstu, używając regularnego wyrażenia lub wg pozycji. Następnie możesz całkowicie zastąpić tekst, zmienić wielkość liter lub przenieść w inne miejsce.</P>
+
+<P>
+<img src='images/search_text.png' border='0'><br>
+Tekst do wyszukania. Możesz wpisać dowolny znak - by szukać spacji po prostu naciśnij spację. Jeśli to pole pozostanie puste to dopasowywana jest cała nazwa.</P>
+
+<P>
+<img src='images/case_sensitive.png' border='0'><br>
+Podczas wyszukiwania rozróżniana jest wielkość znaków.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/reg_exp.png' border='0'><br>
+Szukanie regularnych wyrażeń. Każdy wyszukany element zostanie wskazany. Po zaznaczeniu <i>I</i> będzie rozróżniana wielkoścć znaków, zaznaczenie <i>U</i> włączy wyszukiwanie w trybie Unicode (by szukać znaków nie ascii takich jak 'é' czy \w).
+</P>
+
+<P>
+<img src='images/reg_exp_charset.png' border='0'><br>
+Szukanie zestawu znaków wyrażenia regularnego. <i>^</i> wyszuka wszystkie znaki, które nie należą do zestawu, <i>[a-z]</i> wyszuka wszystkie znaki alfabetyczne (pisane małymi i WIELKIMI literami) oraz <i>[0-9]</i> wyszuka liczby.
+<br>Możesz tego użyć również bez określania wyrażenia regularnego. W innym przypadku WR jest kompilowane jako: '(wyrażenie regularne) <b>|</b> (zestawy znaków)'.<br>
+Również [a-z] nie jest naprawdę '[a-z]' tylko '[^\W\d]' dla prawidłwego wyszukiwania w trybie Unicode.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/pos.png' border='0'><br>
+Szukanie wg pozycji. Pierwsza liczba oznacza gdzie należy zacząć szukać. 0 zawsze oznacza pierwszy znak w nazwie.</P>
+
+<P>
+<img src='images/pos_len.png' border='0'><br>
+Ile znaków porównywać? Nie przejmuj się jeśli wpisana wartość przekroczy długość nazwy.
+</P>
+
+<P>
+<img src='images/pos_start.png' border='0'><br>
+Określa czy wyszukiwanie zacząć od <i>początku</i> czy od <i>końca</i> nazwy. Jeśli od <i>końca</i> to wartość <i>Pozycja</i> jest automatycznie zmieniana zależnie od <i>Długości</i>.
+</P>
+<br>
+<hr width=100% align='center'><br>
+
+<P>
+<img src='images/replace.png' border='0'><br>
+Zastępuje każdy wyszukany obiekt przez tekst lub działanie. Przy używaniu regularnych wyrażeń można użyć ukośniki (np. wpisać "\1" - bez cudzysłowów).
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/modify.png' border='0'><br>
+Zmienia wielkość znaków wyszukanych elementów.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/move.png' border='0'><br>
+Przenosi pierwszy wyszukany element na pozycję.
+</P>
+
+<P>
+<img src='images/move_pos.png' border='0'><br>
+Określa wybraną pozycję. 0 ustawia wyszukany element na pierwszym miejscu w nazwie, a -1 na ostatniej.
+</P>
+
+<P>
+<img src='images/move_txt.png' border='0'><br>
+Użyj wpisanego tekstu do określenia miejsca przesunięcia. Możesz ustawić zarówno czy wyszukiwany element ma być wstawiony <i>przed</i> czy <i>po</i> tym tekście jak i <i>zastąpić</i> go. Jeśli niczego nie wyszukano nic się nie stanie. Można również używać wyrażeń regularnych.
+</P>
+</td></table>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='insert'><P></a>
+<img src='images/insert.png' border='0'><br>
+Użyj tego by wstawić tekst lub działanie w określone miejsce nazwy.
+</p>
+
+<P>
+<img src='images/insert_pos.png' border='0'><br>
+Określ dokładny punkty wstawienia. Rozpoczyna się od 0 i rośnie, więc 0 = pierwszy znak, 1 = drugi znak, -1 ostatni znak.
+</P><br>
+</td></table>
+
+<br><br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='length'><P></a>
+<img src='images/mod_length.png' border='0'><br>
+Zmiana długości nazwy na różne sposoby.</p>
+
+<P>
+<img src='images/mod_length_op.png' border='0'><br>
+Jak zmodyfikować długość. <i>Wypełnienie</i> zwiększy długość do podanej wartości, <i>Skróć</i> skróci a <i>Oba</i>, cóż, wykonuje obie czynności.
+</P>
+
+<P>
+<img src='images/mod_length_size.png' border='0'><br>
+Zmienia długość do wskazanego rozmiaru. Jeśli używasz wyłącznie opcji <i>Wypełnienie</i> a nazwa jest wskazanej długości lub dłuższa lub jeśli nazwa jest krótsza od wskazanej długości i używasz opcji <i>Skróć</i> nie zostaną dokonane żadne zmiany. Użycie opcji <i>Oba</i> zmieni długość wszystkich nazw dokładnie do wskazanego rozmiaru.
+</P>
+
+<P>
+<img src='images/mod_length_direction.png' border='0'><br>
+Kierunek modyfikacji.
+</P>
+
+<P>
+<img src='images/mod_length_pad.png' border='0'><br>
+To jest znak do użycia przy wypełnianiu. Możesz użyć dowolnego znaku występującego w twoim komputerze.
+</P>
+
+<P>
+<img src='images/mod_length_pad_pos.png' border='0'><br>
+Pozwala ustawić konkretny punkt wstawienia wypełnienia. Jeśli wartość wynosi 0 będzie to pierwszy znak <b>wybranego kierunku</b>. Jeśli wartość będzie inna od 0 opcja będzie działać jak <i>wstaw na pozycję</i> (1 = drugi znak, -1 = ostatni znak) całkowicie ignorując kierunki.
+</P>
+<br>
+</td></table>
+<br>
+<br>
+
+<BODY>
+</HTML>

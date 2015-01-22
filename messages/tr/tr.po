@@ -1,0 +1,1503 @@
+# Métamorphose 1 translation file
+# Copyright (C) 2005-2008 Ianaré Sévi <ianare@gmail.com>
+# License: GNU General Public License v3
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Metamorphose\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-13 12:27+0000\n"
+"PO-Revision-Date: 2010-05-07 15:20+0000\n"
+"Last-Translator: Angel Spy <melissadilara@yahoo.com>\n"
+"Language-Team: nouryev\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-12-12 00:44+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"X-Poedit-Country: TURKEY\n"
+"X-Poedit-Language: Turkish\n"
+
+#: DateTime.py:129
+msgid "Date Settings:"
+msgstr "Tarih Ayarları"
+
+#: DateTime.py:133
+msgid "Time Settings:"
+msgstr "Zaman Ayarları"
+
+#: DateTime.py:143 DateTime.py:307
+msgid "MM-DD-YYYY"
+msgstr "AA-GG-YYYY"
+
+#: DateTime.py:144 DateTime.py:308
+msgid "MM-DD-YY"
+msgstr "AA-GG-YYYY"
+
+#: DateTime.py:144 DateTime.py:309
+msgid "DD-MM-YYYY"
+msgstr "GG-AA-YYYY"
+
+#: DateTime.py:144 DateTime.py:310
+msgid "DD-MM-YY"
+msgstr "GG-AA-YY"
+
+#: DateTime.py:145 DateTime.py:311
+msgid "YYYY-MM-DD"
+msgstr "YYYY-AA-GG"
+
+#: DateTime.py:145 DateTime.py:312
+msgid "Month DD, YYYY"
+msgstr "Ay GG, YYYY"
+
+#: DateTime.py:145 DateTime.py:313
+msgid "Day, Month DD, YYYY"
+msgstr "Gün, Ay GG, YYYY"
+
+#: DateTime.py:146 DateTime.py:314
+msgid "YY"
+msgstr "YY"
+
+#: DateTime.py:146 DateTime.py:315
+msgid "YYYY"
+msgstr "YYYY"
+
+#: DateTime.py:151 DateTime.py:161
+msgid "Use menu or enter text"
+msgstr "Menüyü kullanın yada metin girin"
+
+#: DateTime.py:155 DateTime.py:340
+msgid "HH.MM"
+msgstr "SS.DD"
+
+#: DateTime.py:155 DateTime.py:341
+msgid "24HH.MM"
+msgstr "24SS.DD"
+
+#: DateTime.py:156 DateTime.py:342
+msgid "HH.MM.SS"
+msgstr "SS.DD.SS"
+
+#: DateTime.py:156 DateTime.py:343
+msgid "24HH.MM.SS"
+msgstr "24SS.DD.SS"
+
+#: DateTime.py:172 DateTime.py:176
+msgid "Formatting:"
+msgstr "Biçimlendirme:"
+
+#: DateTime.py:186 DateTime.py:197
+msgid "Separator:"
+msgstr ""
+
+#: DateTime.py:209
+msgid "Adjust Time"
+msgstr "Zamanı Ayarla"
+
+#: DateTime.py:219
+msgid "Set to now"
+msgstr "Şuana ayarla"
+
+#: DateTime.py:225
+msgid "Date Preview:"
+msgstr "Tarih Önizleme"
+
+#: DateTime.py:230
+msgid "Time Preview:"
+msgstr "Zaman Önizleme"
+
+#: DateTime.py:239
+msgid "Use the item's"
+msgstr "Öğeleri Kullnın"
+
+#: DateTime.py:246
+msgid "image EXIF tag"
+msgstr "resim EXIF etiketi"
+
+#: DateTime.py:246
+msgid "last access"
+msgstr "son erişim"
+
+#: DateTime.py:246
+msgid "last modification"
+msgstr "son değişiklik"
+
+#: DateTime.py:255
+msgid "time."
+msgstr "zaman."
+
+#: DateTime.py:264
+msgid "creation"
+msgstr "oluşturulma"
+
+#: DateTime.py:266
+msgid "metadata change"
+msgstr "bilgi değişikliği"
+
+#: about.py:59
+msgid "About Metamorphose"
+msgstr "Métamorphose Hakkında"
+
+#: about.py:74
+msgid "Click the trippy graphic to exit."
+msgstr "Çıkmak için"
+
+#: about.py:84
+msgid "Version: %s"
+msgstr "Sürüm : %s"
+
+#: about.py:90
+msgid "GNU General Public License."
+msgstr "GNU Genel Kamu Lisansı"
+
+#: about.py:94
+msgid "Metamorphose Home Page"
+msgstr "Métamorphose Ana Sayfası"
+
+#: about.py:98
+msgid "Donate"
+msgstr "Bağış"
+
+#: about.py:103
+msgid "Support Metamorphose !"
+msgstr "Métamorphose Desteği !"
+
+#: about.py:106
+msgid "Contributors:"
+msgstr "Katkıda bulunanlar"
+
+#: about.py:126
+msgid "Bug Report"
+msgstr "Hata Raporu"
+
+#: about.py:128
+msgid "Submit a bug report."
+msgstr "Hata raporunu gönder"
+
+#: about.py:131
+msgid "Feature Request"
+msgstr "Özellik İsteği"
+
+#: about.py:133
+msgid "Submit a feature request."
+msgstr "Özellik isteğini yolla"
+
+#: errors.py:47 main_window.py:544 main_window.py:724 main_window.py:830
+#: preferences.py:311
+msgid "Error"
+msgstr "Hata"
+
+#: errors.py:48 main_window.py:128
+msgid "File"
+msgstr "Dosya"
+
+#: errors.py:93
+msgid "Errors/Warnings: %s"
+msgstr "Hatalar/Uyarılar: %s"
+
+#: errors.py:96
+msgid "Ready to rename %s items, but with warnings."
+msgstr "%s öğe yeniden adlandırılmaya hazır, ancak uyarılar var."
+
+#: errors.py:98
+msgid "There are %s problems."
+msgstr "%s sorun var"
+
+#: examples.py:38 main_window.py:804
+msgid "Examples"
+msgstr "Örnekler"
+
+#: helpDiag.py:37 preferences.py:55
+msgid "General"
+msgstr "Genel"
+
+#: helpDiag.py:39 main_window.py:129 main_window.py:317
+msgid "Picker"
+msgstr "Toplayıcı"
+
+#: helpDiag.py:41 main_window.py:318
+msgid "- Main -"
+msgstr "- Ana -"
+
+#: helpDiag.py:43 main_window.py:319
+msgid "Numbering"
+msgstr "Numaralandırma"
+
+#: helpDiag.py:45 main_window.py:320
+msgid "Date and Time"
+msgstr "Tarih ve Zaman"
+
+#: helpDiag.py:52 main_window.py:131
+msgid "Help"
+msgstr "Yardım"
+
+#: id3reader.py:25 main.py:303 main_window.py:1140
+msgid "album"
+msgstr "albüm"
+
+#: id3reader.py:26 main.py:303 main_window.py:1140
+msgid "performer"
+msgstr "sanatçı"
+
+#: id3reader.py:27 main.py:304 main_window.py:1140
+msgid "title"
+msgstr "başlık"
+
+#: id3reader.py:28 main.py:304 main_window.py:1141
+msgid "track"
+msgstr "iz"
+
+#: id3reader.py:29 main.py:304 main_window.py:1141
+msgid "year"
+msgstr "yıl"
+
+#: id3reader.py:30 main.py:304 main_window.py:1141
+msgid "genre"
+msgstr "tarz"
+
+#: id3reader.py:176
+msgid "Unknown CDM compression: %02x"
+msgstr "Bilinmeyen CDM sıkıştırması: %02x"
+
+#: id3reader.py:213
+msgid "Long read (%s): (%d > %d)"
+msgstr "Uzun okuma(%s): (%d > %d)"
+
+#: id3reader.py:220
+msgid "Short read (%s): (%d < %d)"
+msgstr "Kısa Okuma (%s): (%d < %d)"
+
+#: id3reader.py:315
+msgid "Unsupported major version: %d"
+msgstr "Desteklenmeyen esas sürüm : %d"
+
+#: main.py:264
+msgid "sub-dir"
+msgstr "alt-klasör"
+
+#: main.py:269
+msgid "Insert sub-directory. Only works in 'dir' field"
+msgstr "Alt-dizin ekle. Sadece 'dir' alanında çalışır"
+
+#: main.py:273 main.py:977 main_window.py:1140
+msgid "date"
+msgstr "tarih"
+
+#: main.py:276
+msgid ""
+"Insert date. Use the 'Date and Time' panel to\n"
+"change settings"
+msgstr ""
+"Tarih ekle. Ayarları değiştirmek için 'Tarih ve Zaman'\n"
+"panelini kullanın."
+
+#: main.py:281 main.py:980 main_window.py:1140
+msgid "time"
+msgstr "zaman"
+
+#: main.py:284
+msgid ""
+"Insert time. Use the 'Date and Time' panel to\n"
+"change settings"
+msgstr ""
+"Zaman ekle. Ayarları değiştirmek için 'Tarih ve\n"
+"Zaman' panelini kullanın."
+
+#: main.py:289
+msgid "numbering"
+msgstr "numaralandırma"
+
+#: main.py:294
+msgid ""
+"Insert enumerating sequence. Use the 'Numbering'\n"
+"panel to change settings"
+msgstr ""
+"Numaralandırma sırası ekle. Ayarları değiştirmek için \n"
+"'Numaralandırma' panelini kullanın."
+
+#: main.py:298
+msgid "id3:"
+msgstr "id3:"
+
+#: main.py:300
+msgid "Insert id3 tag information from file"
+msgstr "Dosyadan id3 bilgisini ekle"
+
+#: main.py:308
+msgid "Select which Id3 tag to read."
+msgstr "Okumak için Id3 bilgisini seçin."
+
+#: main.py:310
+msgid "Dir:"
+msgstr "Klasör:"
+
+#: main.py:314
+msgid "Add directory"
+msgstr "Dizin ekle"
+
+#: main.py:322
+msgid "Use 'sub-dir' button to add sub-directories"
+msgstr "Alt-klasör eklemek için 'sub-dir' düğmesini kullanın."
+
+#: main.py:326
+msgid "Prefix:"
+msgstr "Önek:"
+
+#: main.py:341
+msgid "Suffix:"
+msgstr "Sonek:"
+
+#: main.py:356
+msgid "Search:"
+msgstr "Ara:"
+
+#: main.py:359
+msgid "Search and: replace, modify, or move"
+msgstr "Ara ve: yerine koy, değiştir, veya taşı"
+
+#: main.py:363
+msgid "Insert:"
+msgstr "Ekle:"
+
+#: main.py:366
+msgid "Insert into name."
+msgstr "İsim içerisine ekle."
+
+#: main.py:385 main.py:705
+msgid "Use negative values to start from end of name."
+msgstr "İsimin sonundan başlamak için negatif sayı kullanın."
+
+#: main.py:393
+msgid "Keep blank to replace entire name."
+msgstr "Bütün ismi değiştirmek için boş bırakın."
+
+#: main.py:398
+msgid "case sensitive"
+msgstr "büyük ve küçük harfe duyarlı"
+
+#: main.py:402
+msgid "Differentiate between upper and lower case."
+msgstr "Büyük ve küçük harfleri ayır."
+
+#: main.py:406
+msgid "Length:"
+msgstr "Uzunluk:"
+
+#: main.py:433
+msgid "Text (blank for all):"
+msgstr "Metin (tümü için boşluk):"
+
+#: main.py:448
+msgid "Position:"
+msgstr "Konum:"
+
+#: main.py:456
+msgid "Reg-Expr:"
+msgstr "Düz-İfader:"
+
+#: main.py:459
+msgid "Regular Expression"
+msgstr "Düzenli İfade"
+
+#: main.py:465
+msgid "Start at the:"
+msgstr "Şuırdan başla"
+
+#: main.py:472
+msgid "Keep blank to delete."
+msgstr "Silmek için boş tutun."
+
+#: main.py:477
+msgid "[a-z]"
+msgstr "[a-z]"
+
+#: main.py:479
+msgid "All alphabetical characters"
+msgstr "Bütün alfabetik karakterler"
+
+#: main.py:484
+msgid "[0-9]"
+msgstr "[0-9]"
+
+#: main.py:486
+msgid "All number characters"
+msgstr "Tüm sayısal değerler"
+
+#: main.py:491 picker.py:211
+msgid "I"
+msgstr "I"
+
+#: main.py:494 picker.py:215
+msgid "case-Insensitive match"
+msgstr "büyük küçük Duyarsız eşleşme"
+
+#: main.py:498 picker.py:219
+msgid "U"
+msgstr "U"
+
+#: main.py:501 picker.py:223
+msgid "Unicode match (\\w matches etc)"
+msgstr "Evrensel kod uyumu(\\w uyuşur v.s)"
+
+#: main.py:506
+msgid "end"
+msgstr "son"
+
+#: main.py:514
+msgid "begining"
+msgstr "başlangıç"
+
+#: main.py:522
+msgid ""
+"Activate a field, then type text or use one of \n"
+" the buttons at left to enter in an operation."
+msgstr ""
+"Bir işleme girmek için alanı seçin, metin girin\n"
+"yada soldaki  düğmelerden brini kullanın."
+
+#: main.py:526 main.py:667
+msgid "at position:"
+msgstr "şu konumdan:"
+
+#: main.py:534
+msgid "every"
+msgstr "her:"
+
+#: main.py:542 main.py:774
+msgid "characters"
+msgstr "karakterler"
+
+#: main.py:559
+msgid "Replace with (blank to delete):"
+msgstr "Şununla yer değiştir (silmek için boş bırakın):"
+
+#: main.py:566
+msgid "UPPERCASE"
+msgstr "BÜYÜK-HARF"
+
+#: main.py:567
+msgid "Capitalize first"
+msgstr "İlk harfleri büyük yap"
+
+#: main.py:567
+msgid "SWAP case"
+msgstr "DEĞİŞTİRME seçeneği"
+
+#: main.py:567
+msgid "lowercase"
+msgstr "küçük-harf"
+
+#: main.py:568
+msgid "DoRkIfY"
+msgstr "DoRkIfY"
+
+#: main.py:568
+msgid "Title Style"
+msgstr "Stil Başlığı"
+
+#: main.py:575
+msgid "Choose the type of case modification."
+msgstr "Değişiklik seçeneğini seçin."
+
+#: main.py:580
+msgid "modify:"
+msgstr "değiştir:"
+
+#: main.py:582
+msgid "Modifies all matches."
+msgstr "Uyuşanların tümünü değiştir."
+
+#: main.py:588
+msgid "^"
+msgstr "^"
+
+#: main.py:590
+msgid "Anything but ..."
+msgstr "Hariç hiç biri ..."
+
+#: main.py:596
+msgid "Modify length:"
+msgstr "Değiştirme uzunluğu:"
+
+#: main.py:599
+msgid "Change the length of the name."
+msgstr "İsmin uzunluğunu değiştir."
+
+#: main.py:608
+msgid "Length after modification"
+msgstr "DEğişiklik sonu uzunluk"
+
+#: main.py:615
+msgid "to:"
+msgstr "şuna"
+
+#: main.py:624
+msgid "Character to use for padding."
+msgstr "Doldurmak için kullanılacak karakter."
+
+#: main.py:628
+msgid "pad with:"
+msgstr "ile doldur:"
+
+#: main.py:633
+msgid "from the:"
+msgstr "-den:"
+
+#: main.py:637
+msgid "Cut"
+msgstr "Kes"
+
+#: main.py:637
+msgid "Pad"
+msgstr "Doldur"
+
+#: main.py:638
+msgid "Both"
+msgstr "Her ikisi"
+
+#: main.py:643
+msgid "How to change the length."
+msgstr "Uzunluk nasıl değişir."
+
+#: main.py:647
+msgid "right"
+msgstr "sağ"
+
+#: main.py:648
+msgid "left"
+msgstr "sol"
+
+#: main.py:653
+msgid "Starting direction for modification."
+msgstr "Değişiklik yönetimi başlatılıyor."
+
+#: main.py:658
+msgid "Character sets:"
+msgstr "Karakter setleri:"
+
+#: main.py:676
+msgid "Position to add padding (0 = first character)."
+msgstr "Eklenecek konum (0 = ilk karakter )."
+
+#: main.py:684
+msgid "Move:"
+msgstr "Taşı:"
+
+#: main.py:688
+msgid "Move first search match to specified position."
+msgstr "Aramada ilk eşleşeni belirtilen konuma taşı."
+
+#: main.py:693
+msgid "to position:"
+msgstr "şu konuma:"
+
+#: main.py:714
+msgid "to"
+msgstr "şuraya"
+
+#: main.py:728 main_window.py:1601
+msgid "after"
+msgstr "sonuna"
+
+#: main.py:728 main_window.py:1603
+msgid "before"
+msgstr "önüne"
+
+#: main.py:729 main_window.py:1620
+msgid "replace"
+msgstr "yerine koy"
+
+#: main.py:738
+msgid "text:"
+msgstr "metin:"
+
+#: main.py:743 picker.py:204
+msgid "Reg-Expr"
+msgstr "Reg-Expr"
+
+#: main.py:746
+msgid "Evaluate text as regular expression."
+msgstr "Metni düzenli ifade olarak değerlendir."
+
+#: main.py:752
+msgid "Name"
+msgstr "İsim"
+
+#: main.py:755
+msgid "All operations act on file or folder name."
+msgstr "Tüm işlemler dosya yada klasör isimlerine etkili."
+
+#: main.py:759
+msgid "Extension"
+msgstr "Uzantı"
+
+#: main.py:762
+msgid "All operations act on file extension."
+msgstr "Tüm işlemler uzantılar üzerinde etkili."
+
+#: main.py:766
+msgid ""
+"Operations\n"
+"act on:"
+msgstr ""
+"İşlemler \n"
+"şunların üzerinde etki eder:"
+
+#: main.py:974 main_window.py:1140
+msgid "numb"
+msgstr "uyuş"
+
+#: main_window.py:111
+msgid "Location"
+msgstr "Yer"
+
+#: main_window.py:112
+msgid "Original Name"
+msgstr "Orijinal İsim"
+
+#: main_window.py:113
+msgid "New Name"
+msgstr "Yeni İsim"
+
+#: main_window.py:130
+msgid "Edit"
+msgstr "Düzenle"
+
+#: main_window.py:141 main_window.py:901 preferences.py:78
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: main_window.py:142
+msgid "Change your preferences"
+msgstr "Tercihlerinizi değiştirin"
+
+#: main_window.py:144 main_window.py:637
+msgid "Language"
+msgstr "Dil"
+
+#: main_window.py:145
+msgid "Change the language"
+msgstr "Dil değiştir"
+
+#: main_window.py:147
+msgid "Undo\tctrl+Z"
+msgstr "Geri al\tctrl+Z"
+
+#: main_window.py:148
+msgid "Undo last renaming operation"
+msgstr "Son yeniden adlandırmayı geri al"
+
+#: main_window.py:171
+msgid "About"
+msgstr "Hakkında"
+
+#: main_window.py:172
+msgid "Display general information about Metamorphose"
+msgstr "Métamorphose hakkında genel bilgileri görüntüle"
+
+#: main_window.py:177
+msgid "&Help\tF1"
+msgstr "&Yardım\tF1"
+
+#: main_window.py:178
+msgid "How to use Metamorphose"
+msgstr "Métamorphose'u kullanmak"
+
+#: main_window.py:183
+msgid "&Examples"
+msgstr "Ö&rnekler"
+
+#: main_window.py:184
+msgid "Some useful examples"
+msgstr "Bazı kullanışlı örnekler"
+
+#: main_window.py:189
+msgid "&Date/Time Formats"
+msgstr "&Tarih/Zaman Biçimleri"
+
+#: main_window.py:190
+msgid "Display a reference for Date & Time formats"
+msgstr "Tarih & Zaman için referans göster"
+
+#: main_window.py:195
+msgid "&Regular Expressions"
+msgstr "Düzenli İfadele&r (Regular Expressions )"
+
+#: main_window.py:196
+msgid "Display a regular expression reference"
+msgstr "Düzenli ifade başvurusunu görüntüle"
+
+#: main_window.py:221
+msgid "Select &all\tctrl+A"
+msgstr "&Tümünü Seç\tctrl+T"
+
+#: main_window.py:221
+msgid "Select all items in picker"
+msgstr "Seçici içerisindeki tüm öğeleri seç"
+
+#: main_window.py:225
+msgid "Deselect all items in picker"
+msgstr "Seçici içerisindeki tüm öğelerden seçimini kaldır"
+
+#: main_window.py:225
+msgid "Select &none\tctrl+N"
+msgstr "&Hiç birini seçme\tctrl+H"
+
+#: main_window.py:229
+msgid "&Recursive selection (walk)\tctrl+W"
+msgstr "&Tekrarlanan seçim (yürü walk)\tctrl+W"
+
+#: main_window.py:229 picker.py:230
+msgid "Get all files in directory and sub-directories, but no folders."
+msgstr "Klasörler hariç dizindeki ve alt-dizinlerdeki tüm dosyaları al."
+
+#: main_window.py:248
+msgid "&Browse...\tF4"
+msgstr "&Gözat ...\tF4"
+
+#: main_window.py:249 picker.py:154
+msgid "Browse for path."
+msgstr "Yol için gözat."
+
+#: main_window.py:253
+msgid "&OK (load/reload)\tF5"
+msgstr "&TAMAM (yükle/yeniden yükle)\tF5"
+
+#: main_window.py:253
+msgid "Load or reload current path"
+msgstr "Mevcut yolu yükle yada tazele"
+
+#: main_window.py:258
+msgid "&Load Config\tctrl+L"
+msgstr "Ayar&ları yükle\tctrl+L"
+
+#: main_window.py:258
+msgid "Load configuration from file"
+msgstr "Ayarları dosyadan yükle"
+
+#: main_window.py:262
+msgid "&Save Config\tctrl+S"
+msgstr "Ayarları Kay&det \tctrl+D"
+
+#: main_window.py:262
+msgid "Save configuration to file"
+msgstr "Ayarları dosyaya kaydet"
+
+#: main_window.py:267
+msgid "&Preview\tF6"
+msgstr "&Önizlem&e\tF6"
+
+#: main_window.py:267
+msgid "Preview selection"
+msgstr "Seçimi önizle"
+
+#: main_window.py:271
+msgid "&Go !\tF7"
+msgstr "&Git !\tF7"
+
+#: main_window.py:271
+msgid "Rename selection"
+msgstr "Seçileni yeniden adlandırç"
+
+#: main_window.py:276
+msgid "&Exit\tctrl+Q"
+msgstr "&Çıkış\tctrl+Q"
+
+#: main_window.py:276
+msgid "Exit Metamorphose"
+msgstr "Métamorphose Çıkış"
+
+#: main_window.py:321 main_window.py:1804
+msgid "Errors/Warnings: 0"
+msgstr "Hatalar/Uyarılar : 0"
+
+#: main_window.py:409
+msgid "Preview"
+msgstr "Önizleme"
+
+#: main_window.py:415
+msgid "Go!"
+msgstr "Git!"
+
+#: main_window.py:420
+msgid "Automatic Preview"
+msgstr "Otomatik Önizleme"
+
+#: main_window.py:424
+msgid "(According to settings in preferences)"
+msgstr "(Tercihlerdeki özelliklere göre)"
+
+#: main_window.py:544
+msgid ""
+"%s\n"
+"\n"
+"Could not clear undo"
+msgstr ""
+"%s\n"
+"\n"
+"Geri al temizlenemiyor"
+
+#: main_window.py:661
+msgid ""
+"%s\n"
+"\n"
+"You will need to restart Metamorphose"
+msgstr ""
+"%s\n"
+"\n"
+"Métamorphose'ı yeninden başlatmanız gerekecek."
+
+#: main_window.py:662
+msgid ""
+" to change the language.\n"
+"\n"
+"Close out of Metamorphose now?"
+msgstr ""
+" dil değiştirmek için \n"
+"\n"
+"Métamorphose şimdi kapatılsın mı?"
+
+#: main_window.py:663
+msgid "Change the Language"
+msgstr "Dil değiştir"
+
+#: main_window.py:714
+msgid "Save configuration as ..."
+msgstr "Ayarları farklı kaydet ..."
+
+#: main_window.py:715 main_window.py:736
+msgid "Configuration file (*.cfg)"
+msgstr "Ayar dosyası (*.cfg)"
+
+#: main_window.py:735
+msgid "Load a configuration file"
+msgstr "Ayar dosyası yükle"
+
+#: main_window.py:779
+msgid ""
+"Configuration file may be corrupt.\n"
+"\n"
+"Note this doesn't mean ALL settings did not load."
+msgstr ""
+"Ayar dosyası bozulmuş olabilir.\n"
+"\n"
+"Bu tüm ayarların yüklenmediği anlamına gelmez."
+
+#: main_window.py:780
+msgid "Error Loading Settings"
+msgstr "Ayarları Yükleme Hatası"
+
+#: main_window.py:796
+msgid "Regular Expression Help"
+msgstr "Düzenli İfade Yardım"
+
+#: main_window.py:800
+msgid "Date and Time Formatting Help"
+msgstr "Tarih ve Zaman Biçimlendirme Yardımı"
+
+#: main_window.py:830
+msgid ""
+"%s\n"
+"\n"
+"Undo Failed !!"
+msgstr ""
+"%s\n"
+"\n"
+"Geri alma başarısız !!"
+
+#: main_window.py:840
+msgid "Nothing to undo."
+msgstr "Geri alınacak birşey yok."
+
+#: main_window.py:900
+msgid ""
+"First use or missing configuration file.\n"
+"\n"
+"Loading default settings."
+msgstr ""
+"İlk kullanım yada hatalı ayar dosyası.\n"
+"\n"
+"Varsayılan ayarlar yükleniyor."
+
+#: main_window.py:1026
+msgid "Roman numeral error: %s"
+msgstr "Romen rakamı hata: %s"
+
+#: main_window.py:1073 main_window.py:1114
+msgid "Could not read EXIF tag"
+msgstr "EXIF etiketi okunamadı"
+
+#: main_window.py:1106
+msgid "EXIF error: %s"
+msgstr "EXIF hata: %s"
+
+#: main_window.py:1165
+msgid "Could not read id3 tag: %s"
+msgstr "id3 etiketi okunamadı: %s"
+
+#: main_window.py:1170
+msgid "id3 encoding error"
+msgstr "id3 şifreleme hatası"
+
+#: main_window.py:1174
+msgid "Could not open file!"
+msgstr "Dosya açılamadı!"
+
+#: main_window.py:1178
+msgid "id3 error: %s"
+msgstr "id3 hata: %s"
+
+#: main_window.py:1207
+msgid "Invalid character: %s"
+msgstr "Geçersiz karakter: %s"
+
+#: main_window.py:1214
+msgid "Invalid name: %s"
+msgstr "Geçersiz isim: %s"
+
+#: main_window.py:1218
+msgid "Completely blank"
+msgstr "Tamamen boş."
+
+#: main_window.py:1223
+msgid "Name length over 255 characters"
+msgstr "İsim uzunluğu 255 karakterden fazla"
+
+#: main_window.py:1229 main_window.py:2030 main_window.py:2033
+msgid "Duplicate name"
+msgstr "Aynı isim var"
+
+#: main_window.py:1240
+msgid "Blank file name"
+msgstr "Boş dosya adı"
+
+#: main_window.py:1341 main_window.py:1415 main_window.py:1523
+msgid "Regular-Expression: %s"
+msgstr "Düzenli-İfade: %s"
+
+#: main_window.py:1672
+msgid "Generating preview, please wait..."
+msgstr "Önizleme oluşturuluyor, lütfen bekleyin ..."
+
+#: main_window.py:1776
+msgid "Previewed %s items with no filename errors."
+msgstr "Dosya-ismi hatası olmadan %s öğe önizelendi."
+
+#: main_window.py:2000
+msgid "Renaming in progress, please wait ..."
+msgstr "Yeniden adlandırma sürüyor, lütfen bekleyin ..."
+
+#: main_window.py:2008
+msgid ""
+"\n"
+"Make sure 'undo' directory exists and is read/write\n"
+"\n"
+"You will not be able to undo!!\n"
+"Do you want to continue??"
+msgstr ""
+"\n"
+"'undo' (geri al) dizininin var olduğundan ve okunup/yazılabildiğinden emin "
+"olun \n"
+"\n"
+"Geri alma imkanı olmayacak!!\n"
+" Devam etmek istiyormusunuz??"
+
+#: main_window.py:2009
+msgid "Problem with undo!"
+msgstr "Geri alma sorunu!"
+
+#: main_window.py:2031
+msgid ""
+"This name already exists:\n"
+"%s"
+msgstr ""
+"İsim zaten var:\n"
+" %s"
+
+#: main_window.py:2032
+msgid ""
+"\n"
+"\n"
+"I can make a sub-folder called 't_e_m_p' and attempt\n"
+"to do the renaming operation there. You can then move everything back.\n"
+"This will take longer, and may not always work.\n"
+"\n"
+"Go ahead and try this??"
+msgstr ""
+"\n"
+"\n"
+"'t_e_m_p' isimli alt klasör oluşturabilir\n"
+"ve yeniden isimlendirmeyi o klasörde yapabilirim. Sonra da herşeyi geri "
+"taşıyabilirsiniz.\n"
+"Bu uzun sürecek, ve herzaman çalışmayabilir.\n"
+"\n"
+"Devam et ve bunu dene??"
+
+#: main_window.py:2060
+msgid ""
+"There was an error renaming:\n"
+"\n"
+"%s"
+msgstr ""
+"Yeniden adlandırmada hata vardı:\n"
+"\n"
+"%s"
+
+#: main_window.py:2061
+msgid ""
+"\n"
+"\n"
+"to:\n"
+"\n"
+"%s\n"
+"\n"
+"Reason: %s"
+msgstr ""
+"\n"
+"\n"
+"dan:\n"
+"\n"
+"%s\n"
+"\n"
+"Sebep: %s"
+
+#: main_window.py:2061
+msgid "Bad !!"
+msgstr "Kötü !!"
+
+#: main_window.py:2070
+msgid "Renaming for %s items completed."
+msgstr "% öğenin yeniden adlandırması bitti."
+
+#: main_window.py:2077
+msgid "Renaming cancelled."
+msgstr "Yendien adlandırma iptal edildi."
+
+#: numbering.py:205
+msgid "Counter:"
+msgstr "Sayaç:"
+
+#: numbering.py:208
+msgid "Item Sorting:"
+msgstr "Öğe Sıralaması:"
+
+#: numbering.py:213
+msgid "Style:"
+msgstr "Stil:"
+
+#: numbering.py:217
+msgid "Numerical:"
+msgstr "Sayısal:"
+
+#: numbering.py:224
+msgid "Alphabetical:"
+msgstr "Alfabetik:"
+
+#: numbering.py:228
+msgid "Must start at positive value: (1=a, 28=ab, etc..)"
+msgstr "Pozitif değer olmak zorunda:(1=a, 28=ab, vb. ...)"
+
+#: numbering.py:232
+msgid "Roman Numeral:"
+msgstr "Romen rakamı:"
+
+#: numbering.py:235
+msgid "Count values must be between 1 and 4999"
+msgstr "Sayı değeri 1 ile 4999 arasında olmak zorunda"
+
+#: numbering.py:239
+msgid "Pad, using:"
+msgstr "Kullanarak doldur:"
+
+#: numbering.py:251
+msgid "auto pad"
+msgstr "otomatik doldur"
+
+#: numbering.py:266 numbering.py:365
+msgid "Uppercase"
+msgstr "Büyük harf"
+
+#: numbering.py:273
+msgid "Sort all items:"
+msgstr "Tüm öğeleri sırala:"
+
+#: numbering.py:277
+msgid "Manually adjust item:"
+msgstr "Öğeyi el ile düzelt:"
+
+#: numbering.py:295
+msgid "move to top"
+msgstr "yukarı taşı"
+
+#: numbering.py:302
+msgid "move to bottom"
+msgstr "aşağıya taşı"
+
+#: numbering.py:309 numbering.py:316
+msgid "move by 5"
+msgstr "5 kademe taşı"
+
+#: numbering.py:320
+msgid "Ascending"
+msgstr "Artan"
+
+#: numbering.py:320
+msgid "Descending"
+msgstr "Azalan"
+
+#: numbering.py:321
+msgid "Manually"
+msgstr "El ile"
+
+#: numbering.py:329
+msgid "Start at:"
+msgstr "Şurdan başla"
+
+#: numbering.py:336
+msgid "A.K.A. step size"
+msgstr "A.K.A. adım büyüklüğü"
+
+#: numbering.py:341
+msgid "Count by:"
+msgstr "Say :"
+
+#: numbering.py:344
+msgid "+"
+msgstr "+"
+
+#: numbering.py:349
+msgid "Increase counting number."
+msgstr "Sayma numarasını artır."
+
+#: numbering.py:352
+msgid "-"
+msgstr "-"
+
+#: numbering.py:357
+msgid "Decrease counting number."
+msgstr "Sayma numarasını azalt"
+
+#: numbering.py:361
+msgid "Count:"
+msgstr "Sayma:"
+
+#: numbering.py:376
+msgid "starting number or equivalent alpha/roman character"
+msgstr "başlama numarası yada alfabe/roman rakamı değeri"
+
+#: numbering.py:381
+msgid "Reset every:"
+msgstr "Yeniden kur, her"
+
+#: numbering.py:389
+msgid "0 = don't reset"
+msgstr "0 = yeniden kurma"
+
+#: numbering.py:397
+msgid "Auto pad"
+msgstr "Otomatik doldur"
+
+#: numbering.py:403
+msgid "Fixed pad width:"
+msgstr "ile sabit doldur :"
+
+#: numbering.py:409
+msgid "Reset every directory"
+msgstr "Her dizini yeniden kur"
+
+#: numbering.py:411
+msgid "Reset count to initial value when directory changes."
+msgstr "Dizin değiştiğinde yeniden kurma değeri ilk değerine al"
+
+#: numbering.py:416
+msgid "Count by directory"
+msgstr "Dizin bazında say"
+
+#: numbering.py:418
+msgid "Only increase/decrease count when directory changes."
+msgstr "Dizin değiştiğinde sadece sayı çoğalt/azalt"
+
+#: numbering.py:423
+msgid "Start at number of items"
+msgstr "Numaralı öğelerden başla"
+
+#: numbering.py:426
+msgid "Use number of items as starting point for count."
+msgstr "Sayma başlangıcı olarak kullanılacak öğe sayısı."
+
+#: picker.py:146
+msgid "OK"
+msgstr "TAMAM"
+
+#: picker.py:149
+msgid "Load or reload current path."
+msgstr "Mevcut yolu yükle yada tazele."
+
+#: picker.py:152
+msgid "Browse"
+msgstr "Gözat"
+
+#: picker.py:159
+msgid "Input/Paste path and press OK, or BROWSE for path:"
+msgstr "Yolu girin yada yapıştırın ve TAMAM'a basın, yada yol için GÖZAT :"
+
+#: picker.py:162
+msgid "Select:"
+msgstr "Seç:"
+
+#: picker.py:165
+msgid "all"
+msgstr "tümü"
+
+#: picker.py:174
+msgid "none"
+msgstr "hiçbiri"
+
+#: picker.py:183
+msgid "Folders"
+msgstr "Klasörler"
+
+#: picker.py:189
+msgid "Files"
+msgstr "Dosyalar"
+
+#: picker.py:197
+msgid "Names containing:"
+msgstr "İçeren isimler:"
+
+#: picker.py:202
+msgid "Filter:"
+msgstr "Süzgeç:"
+
+#: picker.py:207
+msgid "Evaluate filter as a regular expression."
+msgstr "Filtreyi düzenli ifade olarak değerlendir."
+
+#: picker.py:227
+msgid "Walk"
+msgstr "Yürü"
+
+#: picker.py:238
+msgid "NOT containing"
+msgstr "İçermeyen"
+
+#: picker.py:321
+msgid "Choose a directory:"
+msgstr "Bir dizin seç:"
+
+#: picker.py:502 picker.py:586 picker.py:596
+msgid "Cannot read path!"
+msgstr "Yol okunamıyor!"
+
+#: picker.py:510
+msgid "Getting directory contents please wait ..."
+msgstr "Dizin içerikleri alınıyor lütfen bekleyin ..."
+
+#: picker.py:580 picker.py:637
+msgid "Retrieved %s items from directory."
+msgstr "Bu dizinde %s öğeye erişildi."
+
+#: picker.py:582 picker.py:607
+msgid "Unable to load item"
+msgstr "Öğe yüklenemiyor"
+
+#: picker.py:606
+msgid ""
+"%s\n"
+"%s\n"
+"\n"
+"Attempt to load more items from this directory?"
+msgstr ""
+"%s\n"
+"%s\n"
+"\n"
+"Bu klasörden daha çok öğe yüklemeye çalışılsın mı?"
+
+#: preferences.py:57
+msgid "Automation"
+msgstr "Otomasyon"
+
+#: preferences.py:59
+msgid "Error Checking"
+msgstr "Hata Denetimi"
+
+#: preferences.py:105
+msgid "Clear out undo on start up"
+msgstr "Geri al listesini başlangıçta temizle"
+
+#: preferences.py:110
+msgid "Use directory tree view"
+msgstr "Dizinler için ağaç görünümünü kullan"
+
+#: preferences.py:116
+msgid "Show Hidden directories in tree view"
+msgstr "Ağaç görünümünde gizli klasörleri göster."
+
+#: preferences.py:122
+msgid "Encoding used in .mp3 id3 tags:"
+msgstr ".mp3 id3 etiketlerinde şifrelenme kullanıldı:"
+
+#: preferences.py:127 preferences.py:346 preferences.py:371
+msgid "Use System Default"
+msgstr "Sistem varsayılanları kullan"
+
+#: preferences.py:128 preferences.py:347
+msgid "All Languages"
+msgstr "Tüm Diller"
+
+#: preferences.py:129 preferences.py:348
+msgid "Western Europe"
+msgstr "Batı Avrupa"
+
+#: preferences.py:130 preferences.py:349
+msgid "Central & Eastern Europe"
+msgstr "Orta & Doğu Avrupa"
+
+#: preferences.py:131 preferences.py:350
+msgid "Esperanto, Maltese"
+msgstr "Esperanto, Maltaya özgü"
+
+#: preferences.py:132 preferences.py:351
+msgid "Nordic Languages"
+msgstr "İskandinav Dilleri"
+
+#: preferences.py:133 preferences.py:352
+msgid "Celtic Languages"
+msgstr "Keltçe"
+
+#: preferences.py:134 preferences.py:353
+msgid "Baltic Languages"
+msgstr "Baltık Dilleri"
+
+#: preferences.py:135 preferences.py:354
+msgid "Cyrillic Languages"
+msgstr "Kiril Dilleri"
+
+#: preferences.py:136 preferences.py:355
+msgid "Greek"
+msgstr "Yunanca"
+
+#: preferences.py:137 preferences.py:356
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: preferences.py:138 preferences.py:357
+msgid "Hebrew"
+msgstr "İbrani dili"
+
+#: preferences.py:139 preferences.py:358
+msgid "Arabic"
+msgstr "Arapça"
+
+#: preferences.py:140 preferences.py:359
+msgid "Urdu"
+msgstr "Urduca"
+
+#: preferences.py:141 preferences.py:360
+msgid "Thai"
+msgstr "Tayca"
+
+#: preferences.py:142 preferences.py:361
+msgid "Vietnamese"
+msgstr "Vietnamca"
+
+#: preferences.py:143 preferences.py:362
+msgid "Traditional Chinese"
+msgstr "Geleneksel Çince"
+
+#: preferences.py:144 preferences.py:363
+msgid "Simplified Chinese"
+msgstr "Basitleştirilmiş Çince"
+
+#: preferences.py:145 preferences.py:364
+msgid "Unified Chinese"
+msgstr "Birleştirilmiş Çince"
+
+#: preferences.py:146 preferences.py:365
+msgid "Korean"
+msgstr "Korece"
+
+#: preferences.py:147 preferences.py:366
+msgid "Japanese"
+msgstr "Japonca"
+
+#: preferences.py:155
+msgid "Select encoding:"
+msgstr "Şifrelemeyi seçin"
+
+#: preferences.py:159
+msgid "Select language group:"
+msgstr "Dil grubunu seçin"
+
+#: preferences.py:176
+msgid "Use Windows compatible names"
+msgstr "Windows uyumlu isimler kullan"
+
+#: preferences.py:180
+msgid "Mark name as bad, do not remove characters"
+msgstr "İsmi kötü olarak işaretle, karakter çıkartma"
+
+#: preferences.py:185
+msgid "Use Windows compatible characters"
+msgstr "Windows uyumlu karakterler kullan"
+
+#: preferences.py:188
+msgid "Leave checked for maximum compatibility."
+msgstr "Uyumluluğu en üst düzey olarak bırak."
+
+#: preferences.py:192
+msgid "Automatically show errors after preview"
+msgstr "Önizleme sonrası hataları otomatik olarak göster"
+
+#: preferences.py:200
+msgid "Select all items when loading directory"
+msgstr "Dizin yüklenirken tüm öğeleri seç"
+
+#: preferences.py:206
+msgid "Re-load directory contents after renaming"
+msgstr "Yeniden adlandırma sonrası dizin içeriğini yeniden yükle"
+
+#: preferences.py:212
+msgid "(When working with many items, this feature can be annoying.)"
+msgstr "(Çok öğe ile çalıştığınızda bu özellik sinir bozucu olabilir.)"
+
+#: preferences.py:222
+msgid "Automatically preview selection when the following are modified:"
+msgstr "Şunlar değiştiğinde seçilenleri otomatik olarak önizle:"
+
+#: preferences.py:227
+msgid "Picker panel"
+msgstr "Toplayıcı paneli"
+
+#: preferences.py:231
+msgid "-Main- panel"
+msgstr "-Esas-"
+
+#: preferences.py:235
+msgid "Date and Time panel"
+msgstr "Tarih ve Saat paneli"
+
+#: preferences.py:239
+msgid "Numbering Panel"
+msgstr "Numaralandırma Paneli"
+
+#: preferences.py:311
+msgid ""
+"%s\n"
+"\n"
+"Could not load preferences, reverting to default settings."
+msgstr ""
+"%s\n"
+"\n"
+"Ayarlar yüklenemiyor, varsayılan ayarlar alınıyor."
+
+#: roman.py:56
+msgid "out of range"
+msgstr "erişim dışı"
+
+#: roman.py:58
+msgid "non-integer"
+msgstr "sayısal değil"
+
+#~ msgid "Seperator:"
+#~ msgstr "Ayraç:"

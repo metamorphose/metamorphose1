@@ -1,0 +1,51 @@
+metamorphose1 (1.1.3-1) unstable; urgency=medium
+
+  * Add Slovak translation.
+  * Remove loading unneeded modules.
+  * Fix annoying error message on startup.
+
+ -- ianaré sévi <ianare@gmail.com>  Mon, 15 Mar 2010 13:02:30 -0400
+
+metamorphose1 (1.1.2-2) unstable; urgency=medium
+
+  * fix Korean translation loading.
+
+ -- ianaré sévi <ianare@gmail.com>  Sat, 21 Nov 2009 21:27:02 -0500
+
+metamorphose1 (1.1.2-1) unstable; urgency=medium
+
+  * Added Korean translation.
+  * Some bug fixes.
+
+ -- ianaré sévi <ianare@gmail.com>  Thu, 11 Nov 2009 19:12:16 -0500
+ 
+metamorphose1 (1.1.1-1) stable; urgency=medium
+
+  * Added Swedish translation.
+  * Added Greek translation.
+  * Many bug fixes.
+
+ -- ianaré sévi <ianare@gmail.com>  Wed, 17 Sept 2008 13:47:16 -0400
+ 
+metamorphose1 (1.1.0-1) unstable; urgency=medium
+
+  * Modifications made to UI to allow left-to-right languages.
+  * Added Arabic translation.
+  * Changes to organization of translations for better Linux compliance.
+  * Makefile improved (Thanks to Javier Prats and Pierre-Yves Chibon).
+  * New installer for Windows.
+  * French help section complete.
+  * Show which files will be renamed in preview.
+  * Many bug fixes.
+  * Development freeze, any future releases will be language additions or bug fixes.
+
+ -- ianaré sévi <ianare@gmail.com>  Fri, 26 Oct 2007 01:25:16 -0400
+ 
+metamorphose1 (1.0.5-1) unstable; urgency=medium
+
+  * Italian help section finished.
+  * Updates to French help translation.
+  * Fixed error message on invalid language.
+  * Fixed bug which would stop renaming under Windows when changing case.
+
+ -- ianaré sévi <ianare@gmail.com>  Wed, 25 Apr 2007 00:30:48 -0400

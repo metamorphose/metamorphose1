@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lisez-Moi de Métamorphose</title>
+<style type='text/css'>
+/* Text */
+.OSes{
+	color:#6B6FA1; /* light blue-mauve */
+	font-weight: 700;
+}
+.heading{color:#000099;
+	font-family: Courier, "Courier New", monospace;
+}
+P.copyright{font-size:13px; color:darkgrey}
+.standOut{
+	color:#6E0601;
+	font-size:17;
+}
+.versionTxt{
+	color:#6E0601;
+	letter-spacing:1;
+	font-size:16;
+}
+A:link{color:blue;}
+A:visited{color:#330099;}
+A:hover{color:#CC3333; text-decoration:none;}
+
+/* List */
+ul{
+	margin-top:1px;
+	list-style-type: square;
+}
+ol{list-style-type: decimal;}
+</style>
+</head>
+
+<BODY BGCOLOR='white'>
+
+<center>
+<h2>Lisez-Moi de Métamorphose</h2>
+</center>
+<p>
+<b>Notez:</b> Ceci est essentiellement une copie de la
+<b><a href="http://file-folder-ren.sourceforge.net/index.php?page=Aide">page d'aide</a></b>
+sur le site web de Métamorphose, donc allez plutôt là pour voir la dernière mise à jour.<br>
+Mais comme y'a pas tout le monde sur le net, voici:
+</p>
+<br>
+
+<p>
+<b class='heading'>Instalation avec le fichier executable:</b><br>
+Les utilisateurs de win32 peuvent simplement
+<a href="http://sourceforge.net/project/showfiles.php?group_id=146403">télécharger</a>
+le fichier executable et le lancer. Métamorphose sera instalé comme n'importe autre
+logiciel pour Windows, et sera disponible du menu démarage.
+</p>
+<br>
+
+<p>
+<b class='heading'>Instalation d'après les sources:</b><br>
+<b>Pré-instaler la version correcte de wxPython (certain systèmes peuvent déjà avoir ceci):</b>
+
+<ul>
+<li>Python 2.4 ou 2.5 disponible sur <a href='http://www.python.org/'>www.python.org</a></li>
+<li>wxPython 2.6 disponible sur <a href='http://www.wxpython.org'>www.wxpython.org</a>.<BR>
+À partir de la version 0.3.0, <b>Métamorphose marchera UNIQUEMENT avec la version unicode!</b></li>
+</ul>
+
+<ul>
+	<li>Paquets pour Debian nécéssaires à wxPython:
+	<a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=libwxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>libwxgtk2.6</a>,
+	<a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=python-wxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>python-wxgtk2.6</a>
+	</li>
+</ul>
+<br>
+<b>Instalation:</b><BR>
+Décomprimer le fichier contenant les sources où vous les voulez. Si vous utilisez Linux ou freeBSD, allez à ce
+répertoire puis entrez (comme root):
+<pre>
+$ make all
+</pre>
+
+<BR>
+<b>Comment lancer:</b><br>
+Executer 'Metamorphose.py' avec l'interprète Python dans le dossier 'metamorphose'.<br>
+À partir de la version 0.3.0, vous pouvez spécifier un dossier à ouvrir.<BR>
+Les espaces sont permis, donc le suivant est parfaitement acceptable:
+<pre>$ python Metamorphose.py /srv/samba/Windows Aime Les Espaces</pre>
+<br>
+<i>Un peu plus d'information pour Linux:</i><br>
+Le fichier makefile devrait tout faire pour vous, il est indépendant de l'architecture et de la distribution.<br>
+Métamorphose sera instalé dans <i>/usr/share/metamorphose</i>, vous pouvez le lancer avec <pre>$ metamorphose</pre>
+et la page guide (manpage) avec <pre>$ man metamorphose</pre>
+Si vous utilisez un gestionnaire de fenêtres compatible avec <a href="http://www.freedesktop.org/">freedesktop.org</a>
+(comme Gnome ou KDE), il devrait avoir une entrée dans 'Applications -> Accessoires'.<br>
+</p>
+
+<BR>
+<p>
+<b class='heading'>Désinstalation de Métamorphose:</b><br>
+<b>Windows:</b><br>
+Lancer le désinstaleur ou enlever à partir d' 'ajouter/enlever programmes' dans le panneau de contrôle.
+<br><br>
+<b>Sources (tous):</b>
+<ul>
+<li>A partir de la version 0.4.0, supprimer les fichiers particuliers à l'utilisateur:<br>
+Windows: C:\Documents and Settings\UTILISATEUR\Application Data\.metamorphose<br>
+Linux: /home/UTILISATEUR/.metamorphose<br>
+Mac: /Library/Application Support/.metamorphose</li>
+<li>Supprimer la page guide (manpage) si vous l'avez installée.</li>
+<li>Supprimer les fichiers sources.</li>
+</ul>
+<b>Sources (Linux & FreeBSD) :</b>
+<pre>
+$ make remove
+</pre>
+Pour aussi supprimer tous les fichiers des utilisateurs :
+<pre>
+$ make remove remusr=1
+</pre>
+</p>
+
+<BR>
+
+<p>
+<b class='heading'>Aidez-moi à vous aider:</b><br>
+Vous pouvez aider le projet Métamorphose à évoluer.
+<ul>
+<li>Soumettre un <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765156">Rapport de Bogue</a></li>
+<li>Soumettre une <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765159">Demande de Nouveauté</a></li>
+</ul>
+</p>
+
+
+<br>
+<p>
+<b class='heading'>Systèmes d'exploitation testés:</b><br>
+<b>Execution Binaire:</b><BR>
+<B class='OSes'>Windows 95, 98, ME:</B> Stable avec Métamorphose v0.2.3a et INFÉRIEUR. À partir
+de v0.3.0 il y a quelques problèmes, comme un crash en accedant les menus supérieurs.<BR>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stable, support de thèmes.<BR>
+<BR>
+<b>Execution interpretée:</b><BR>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stable, support de thèmes.<BR>
+<B class='OSes'>Linux 2.6 - GNOME:</B> Stable, support de thèmes.<BR>
+<B class='OSes'>Linux 2.6 - KDE:</B> Stable.<BR>
+<B class='OSes'>Mac OS 10.4:</B> Stable, support de thèmes.<BR>
+<B class='OSes'>FreeBSD 5.5 - Window Maker:</B> Plutôt stable. Choisir de fermer en changeant la langue
+peut planter l'application, mais la langue est changée correctement une fois que l'application est tuée
+et redémarrée. Aussi les listes déroulantes peuvent ne pas déclencher un événement correctement.<BR>
+<B class='OSes'>FreeBSD 6.2 - Fluxbox:</B> Stable.<br>
+</p>
+
+<BR>
+<p>
+<b class='heading'>Quelques problèmes connus:</b><br>
+<b>Le logiciel se gèle  en 'cheminant' beacoup de fichiers/dossiers:</b><BR>
+Pas vraiment gelé, mais l'attente peut être longue si beaucoup de fichiers/dossiers sont chargés. Pendant ce processus, l'application ne se rafraîchi
+pas, donnant l'impression d'être gelée.<BR>
+Le temps dans cet état est dépendant de votre ordinateur, si le chemin est local ou sur réseau, et bien sûr du nombre d'articles.
+<BR><BR>
+
+<b>Python error - "cannot set locale to 'xx_XX' ":</b><BR>
+Applicable aux desktops Linux seulement. Verifiez que la langue est supportée par le système, car certaines distributions (comme Ubuntu)
+n'installent pas de support pour d'autres langues à part celles spécifiées durant l'installation.
+</p>
+<BR><br>
+
+<!-- end page content -->
+
+</body>
+</html>

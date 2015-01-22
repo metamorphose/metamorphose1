@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//IT">
+﻿<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'>
+<b>Il pannello <I>Principale</I> è dove le operazioni di rinomina vengono settate.</b></font>
+<br>
+<font color='red'>Devi fare le modifiche qui per fare qualsiasi rinomina.</font>
+<br>
+
+<br>
+[<a href='#buttons'>Bottoni</a>]&nbsp;&nbsp;
+[<a href='#operations'>Ordine delle operazioni</a>]<br>
+[<a href='#fields'>campi di rinomina</a>:
+<a href='#search'>Cerca & Sostituisci/Modifica/Muovi</a> &nbsp;<a href='#insert'>Inserisci</a> &nbsp;<a href='#length'>Modifica la lunghezza</a>]
+<br>
+
+<a name='buttons'><P></a>
+<B>BUTTONI:</B><br>
+I bottoni inseriranno un po' di testo nello spazio di testo. Quando il pulsante <I>Anteprima</I>
+viene premuto, il testo si trasformerà nell'operazione richiesta. Per esempio, attivando la il campo
+<I>Prefisso</I> e cliccando su <I>data</I>, il codice ':date:' apparirà nel campo, 
+tale codice sarà trasformato nella data attuale quando si rinomineranno gli oggetti. Questo
+permette una grande flessibilità, in quanto puoi mescolare operazioni e testo. Così se vuoi 
+avere un separatore tra il prefisso e il nome originale, basta premere il pulsante '_', cosicche lo spazio ora
+contenga ':date:_', assumendo che oggi sia il 6 agosto 1223 e che il fail rinominato si chiami file.ext,
+il file verrà rinominato come: 08-06-1223_file.ext<br>
+Si possono mettere quante operazione si desideri, fino a che il nome totale dell'oggetto non supera i
+255 caratteri.
+Un testo di questo tipo è perfettamente valido:<br>
+:numb:_some text_:date:_:time:_:track:-:performer:-:title:
+</P>
+<br>
+
+<p>
+<img src='images/sub-dir_btn.png' border='0'><br>
+Il bottone <I>sottocartella</I> inserisce un separatore all'interno del campo <I>cartella</I>.
+Apparirà il testo ':/'. Nelle altri campi non farà nulla.
+</p>
+<br>
+
+<p>
+<img src='images/numbering_btn.png' border='0'><br>
+Il bottone <I>numerazione</I> inserirà una sequenza numerica automatica. Nelle impostazioni predefinite,
+la numerazione parte da 1, incrementa di 1, e ha un riempimento 0 nel numero più grande
+(cioé se ci sono 100 oggetti, conterà 001, 002, 003 ... 100). Puoi cambiare tutte le impostazioni
+all'interno del pannello <I>Numerazione</I>.
+</p>
+<br>
+
+<p>
+<img src='images/date_time_btn.png' border='0'><br>
+I pulsanti <I>Data</I> e <I>Ora</I> inseriscono, rispettivamente, una data o ora preformattate.
+Il metodo predefinito per la data è: MM-GG-AAAA (la predefinità americana), mentre l'ora è: OO:MM:SS
+(formato 12 ore). Entrambi useranno ora e data correnti. Per cambiare le impostazioni usare il pannello
+<I>Data e Ora</I>.
+</p>
+<br>
+
+<p>
+<img src='images/id3_btn.png' border='0'><br>
+Il pulsante <I>ID3</I> inserirà le informazioni ID3 ricevute dal file .mp3.
+'IL' file .mp3 perché il programma guarderà ogni file e prenderà le info. Si può selezionare la sezione
+usando il menu a tendina. Se il file mp3 ha perso le informazioni richieste uno spazio bianco verrà
+messo al suo posto. Gli altri tipi di file ignoreranno questa impostazione.</p>
+<HR width='50%' align='center'>
+
+<a name='operations'><P></a>
+<B>ORDINE DELLE OPERAZIONI:</B><br>
+L'ordine in cui le varie operazione saranno eseguite durante dal programma. E' differente dall'ordine
+che hanno nell'interfaccia (ma più logico, no?), così ho pensato di mostrare la lista qui.
+<OL>
+<LI>modifica la lunghezza
+<LI>Cerca e Sostituisci / Modifica / Muovi
+<LI>Prefisso
+<LI>Suffisso
+<LI>Inserisci
+<LI>Cartella
+</OL>
+</p>
+
+<HR width='50%' align='center'>
+
+<a name='fields'><P></a>
+<B>CAMPI DI RINOMINA:</B><br>
+Questo è il cuore di Métamorphose. Puoi modificare le impostazioni qui per poter rinominare. 
+</p>
+<P>
+<img src='images/operations.png' border='0'><br>
+Qui puoi decidere quale parte del nome dell'oggetto verrà modificata. Se
+'Nome' is attivo, il nome delle cartelle e dei file saranno modificabili. Se estensione è attivo
+l'estensione potrà essere modificata.
+</P>
+<br>
+
+<P>
+<img src='images/dir.png' border='0'><br>
+Questo permette di aggiungere una cartella in cui mettere gli oggetti rinominati. Potrai aggiungere sottocartelle
+con il pulsante <I>'sottocartella'</I>. Potrai anche usare tutti gli altri bottoni che sono stati descritti finora.
+</P>
+<br>
+
+<P>
+<img src='images/prefix.png' border='0'><br>
+Aggiunge un prefisso all'oggetto.
+</P>
+<br>
+
+<P>
+<img src='images/suffix.png' border='0'><br>
+Aggiunge un suffisso all'oggetto.
+</P>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='search'><P></a>
+<img src='images/search.png' border='0'><br>
+Questa è una funzione davvero potente che permette di cercare e poi modificare un testo nel nome
+per poi modificarlo in qualche modo. Molte operazione sono fatte semplicemente usando questa funzione.
+Puoi cercare nel nome un certo testo, usando espressioni regolari, o per posizione. Puoi rimpiazzare
+il testo completamente, modificare lo stile, o movendolo in un'altra posizione.
+</P>
+
+<P>
+<img src='images/search_text.png' border='0'><br>
+Il testo da cercare. Puoi inserire qualsiasi carattere, cosi per cercare uno spazio,
+premi semplicemente la barra spaziatrice. Se questo campo è lasciato vuoto l'intero nome sarà selezionato.
+</P>
+
+<P>
+<img src='images/case_sensitive.png' border='0'><br>
+Selezionare questo se vuoi che la ricerca sia case-sensitive.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/reg_exp.png' border='0'><br>
+Cerca con una espressione regolare. Ogni porzione di testo che segue quelle regole sarà selezionato. <i>I</i> spuntato
+rende la ricerca case-insensitive, <i>U</i> attiva invece la modalità Unicode (per poter rendere editabili caratteri non-ascii
+come 'é' con cose tipo \w).
+</P>
+
+<P>
+<img src='images/reg_exp_charset.png' border='0'><br>
+Cerca per determinato insiemi di caratteri. <i>^</i> cercherà ogni carattere non nell'insieme,
+<i>[a-z]</i> cercherà ogni carattere alfabetico (MAIUSCOLO e minuscole comprese), e <i>[0-9]</i> selezionerà tutti i numeri.
+<br>Lo puoi usare anche senza definire un'espressione regolare. Altrimenti l'espressione regolare sarà compilata così:
+'(espressione regolare) <b>|</b> (insieme di caratteri)'.<br>
+Anche [a-z] non è realmente '[a-z]', è '[^\W\d]' per una appropriata ricerca in Unicode.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/pos.png' border='0'><br>
+Cerca per posizione.Il primo indica da dove partire. 0 è sempre il primo carattere del nome.
+</P>
+
+<P>
+<img src='images/pos_len.png' border='0'><br>
+Quanti caratteri selezionare. Non c'é da preoccuparsi se il numero di caratteri supera la lunghezza del nome.
+</P>
+
+<P>
+<img src='images/pos_start.png' border='0'><br>
+Determina se pertire dall'<i>inizio</i> o la <i>fine</i> del nome. se <i>fine</i> è attivo, allora
+il valore della <i>Posizione</i> cambia automaticamente a seconda della <i>Lunghezza</i>.
+</P>
+<br>
+<hr width=100% align='center'><br>
+
+<P>
+<img src='images/replace.png' border='0'><br>
+Sostituisce ogni parte selezionata con un testo specifico o una operazione. Se si stanno usando espressioni regolari, puoi usare
+backreferences (i.e. scrivere "\1" senza le virgolette).
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/modify.png' border='0'><br>
+Modifica lo stile dei nomi.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/move.png' border='0'><br>
+Muove la parte selezionata in una certa posizione.
+</P>
+
+<P>
+<img src='images/move_pos.png' border='0'><br>
+Usa una posizione fissa. 0 mette la selezione all'inizio del nome, -1 alla fine.
+</P>
+
+<P>
+<img src='images/move_txt.png' border='0'><br>
+Usa un testo specifico come posozione dello spostamento. Puoi decidere se mettere la selezione <i>prima</i> o
+<i>dopo</i>, o di <i>sostituire</i> il testo. Se non viene trovato nulla, non succede niente. L'uso di espressioni regolari è permesso.
+</P>
+</td></table>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='insert'><P></a>
+<img src='images/insert.png' border='0'><br>
+Usa questo per inserire testo o una operazione in un punto specifico del nome.
+</p>
+
+<P>
+<img src='images/insert_pos.png' border='0'><br>
+Specifica un punto specifico in cui inserirlo. 0 = primo carattere,
+1 = secondo, -1 l'ultimo.
+</P><br>
+</td></table>
+
+<br><br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='length'><P></a>
+<img src='images/mod_length.png' border='0'><br>
+Cambia la lunghezza del nome in vari modi.
+</p>
+
+<P>
+<img src='images/mod_length_op.png' border='0'><br>
+Come modificare il nome. <i>Riempimento</i> aumenterà la lunghezza fino a una dimensione data, <i>Taglia</i> l'accorcerà,
+e <i>Entrambi</i>, lì farà entrambi.
+</P>
+
+<P>
+<img src='images/mod_length_size.png' border='0'><br>
+Cambia la dimensione a questa dimensione. Se stai usando <i>Riempimento</i> e il nome è così o maggiore,
+o se il nome è minore e stai usando <i>Taglia</i>, allora nulla sarà fatto. Usando <i>Entrambi</i>
+i nomi diventeranno esattamente di questa misura.
+</P>
+
+<P>
+<img src='images/mod_length_direction.png' border='0'><br>
+Direzione in cui avviene la modifica.
+</P>
+
+<P>
+<img src='images/mod_length_pad.png' border='0'><br>
+Questo è il carattere da usare per il riempimento. Potrai usare qualsiasi carattere che il tuo computer permette.
+</P>
+
+<P>
+<img src='images/mod_length_pad_pos.png' border='0'><br>
+Permette di scegliere un punto specifico in cui inserire lo riempimento. Se lasciato a 0, all'ora sarà la prima posizione
+<b>della direzione scelta</b>. Se è diverso da 0 fuzionerà come <i>inserisci in una posizione</i>
+(1 = secondo, -1 = ultimo), ignorando la direzione.
+</P>
+<br>
+</td></table>
+<br>
+<br>
+
+<BODY>
+</HTML>

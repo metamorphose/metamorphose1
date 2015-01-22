@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+   <style>
+    .heading{color:#000099;}
+    </style>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'><b>
+Ako používať regulárne výrazy v Métamorphose.
+</b></font>
+<br>
+<p>
+Regulárne výrazy sú mocný nástroj na vyhľadávanie vzorov. V tomto prípade
+budú mená súborov a adresárov vyhľadávané podľa ľubovoľného výrazu,
+ktorý zadáte do textového poľa <i>Reg-Výr</i>.
+<br>
+Métamorphose používa regulárne výrazy jazyka Python, ktorých syntax sa môže
+líšiť od syntaxe regulárných výrazov iných jazykov alebo programov.
+<br>
+Do textového poľa zadáte výraz, s ktorým sa majú zhodovať vybrané položky
+na premenovanie. Do poľa nezadávajte sekvenciu '//'.
+Extra parametre nastavujete zaškrtnutím <i><b>I</b></i>
+pre rozlišovanie malých a veľkých písmen, a <i><b>U</b></i> pre Unicode.
+</p>
+
+<p>
+<font color='blue'><b>
+Z manuálu Python (upravené pre Métamorphose):
+</b></font>
+
+<p>
+Nasleduje stručné vysvetlenie syntaxe a sémantiky regulárnych výrazov.
+Pre ďaľšie informácie si môžte prečítať Regular Expression HOWTO prístupné z
+<a href="http://www.amk.ca/python/howto/regex/">
+http://www.amk.ca/python/howto/regex/</a>
+</p>
+
+<p>
+Regulárne výrazy obsahujú špeciálne a bežné znaky.
+Bežné znaky ako "<b>A</b>", "<b>a</b>", alebo
+"<b>0</b>", sú najjednoduchšou formou regulárnych výrazov;
+zhodujú sa sami zo sebou.
+Bežné znaky môžte spájať, takže <b>last</b>
+sa zhoduje s reťazcom <code>'last'</code>.
+(Vo zvyšku textu budú regulárne výrazy písané <b>týmto štýlom</b>,
+zvyčajne bez uvodzoviek, a zhodujúce sa reťazce
+<code>'v jednoduchých úvodzovkách'</code>.)
+</p>
+
+<p>
+Niektoré znaky, ako "<b>|</b>" alebo "<b>(</b>", sú špeciálne.
+Špeciálne znaky buď reprezentujú množinu bežných znakov,
+alebo ovplyvňujú akým spôsobom budú interpretované regulárne pod-výrazy
+okolo nich.
+</p>
+
+<p>
+Špeciálne znaky sú:<br>
+
+<dl>
+<dt><b><font color='blue'>.</font></b></dt>
+<dd>(Bodka)  ľubovoľný znak.
+<br></dd>
+
+<dt><b><font color='blue'>^</font></b></dt>
+<dd>(Strieška)  začiatok reťazca.
+<br></dd>
+
+<dt><b><font color='blue'>$</font></b></dt>
+<dd>Koniec reťazca.  <b>foo</b> sa zhoduje s 'foo' a aj s 'foobar',
+ale s regulárnym výrazom <b>foo$</b> sa zhodujú iba reťazce končiace na 'foo'.
+<br></dd>
+
+<dt><b><font color='blue'>*</font></b></dt>
+<dd>0 až niekoľko opakovaní predchádzajúceho regulárneho výrazu,
+<b>ab*</b> sa zhoduje s 'a', 'ab', alebo 'a' nasledovaným ľubovoľným
+počtom znakov 'b'.
+<br></dd>
+
+<dt><b><font color='blue'>+</font></b></dt>
+<dd>1 až niekoľko opakovaní predchádzajúceho regulárneho výrazu,
+<b>ab+</b> sa zhoduje s 'a' nasledovaným aspoň jedným znakom 'b',
+nezhoduje sa so samotným znakom 'a'.
+<br></dd>
+
+<dt><b><font color='blue'>?</font></b></dt>
+<dd>0 až 1 opakovanie predchádzajúceho regulárneho výrazu.
+<b>ab?</b> sa zhoduje s 'a' alebo 'ab'.
+<br></dd>
+
+
+<dt><b><font color='blue'>*?</code>, <code>+?</code>, <code>??</font></b></dt>
+
+<dd>Špeciálne znaky "<b>*</b>",
+"<b>+</b>", and "<b>?</b>" sa označujú aj termínom <i>nenásytné</i>,
+čo znamená, že zhoda je vždy s najdlhšou možnou časťou textu.
+Toto správanie sa nie vždy nehodí. Príklad, výraz <b>&lt;.*&gt;</b>
+sa zhoduje s <code>'&lt;H1&gt;title&lt;/H1&gt;'</code>, čiže celý reťazec,
+nielen <code>'&lt;H1&gt;'</code>.  Pridaním znaku "<b>?</b>" za daný
+špeciálny znak sa bude zhoda <em>minimalizovať</em>. To znamená,
+že <b>.*?</b> sa bude zhodovať s <code>'&lt;H1&gt;'</code>.
+<br></dd>
+
+
+<dt><b><font color='blue'>{m}</font></b></dt>
+<dd>Presne <var>m</var> kópií predchádzajúceho regulárneho výrazu;
+menej výskytov znamená nezhodu. Napríklad,
+<b>a{6}</b> znamená zhodu s presne šesť po sebe nasledujúcimi znakmi
+"<b>a</b>", ale nie s piatimi.
+<br></dd>
+
+
+<dt><b><font color='blue'>{m,n}</font></b></dt>
+<dd>Opakovanie predošlého regulárneho výrazu <var>m</var>
+až <var>n</var>-krát, snaha opakovať výraz čo najviac.
+Napríklad, <b>a{3,5}</b> sa zhoduje s 3 až 5 opakovaniami znaku "<b>a</b>".
+Vynechaním <var>m</var> sa dolná hranica nastaví na nulu,
+vynechaním <var>n</var> sa odstráni horná hranica.
+Príklad, <b>a{4,}b</b> sa bude zhodovať s <code>aaaab</code>,
+alebo tisíc opakovaní znaku "<b>a</b>" nasledovaných jedným znakom
+<code>b</code>, ale nie <code>aaab</code>.
+<br></dd>
+
+
+<dt><b><font color='blue'>{m,n}?</font></b></dt>
+<dd>Opakovanie predošlého regulárneho výrazu <var>m</var>
+až <var>n</var>-krát, so snahou <em>minimalizovať</em> počet opakovaní.
+Toto je nenásytná verzia predošlého výrazu. Príklad, v 6-znakovom
+reťazci <code>'aaaaaa'</code>, výraz <b>a{3,5}</b> sa bude zhodovať
+s 5 znakmi "<b>a</b>", ale výraz <b>a{3,5}?</b> sa bude zhodovať
+iba s 3 znakmi.
+<br></dd>
+
+
+<dt><b><font color='blue'>\</font></b></strong></dt>
+<dd>Buď uvádza špeciálne znaky (takže uvedený špeciálny znak, "<b>*</b>",
+"<b>?</b>" a podobne, sa bude brať ako obyčajný znak),
+alebo špeciálnu sekvenciu. Tieto sú popísané nižšie.
+Pokiaľ nepoužívate surový reťazec na zápis regulárneho výrazu,
+pametajte, že Python tiež používa spätné lomítko na uvedenie
+reťazcových literálov;
+ak uvedená sekvencia nie je rozpoznaná Python parserom,
+tak sú spätné lomítko a nasledujúci znak zahrnuté vo výslednom reťazci.
+Inak ak by Python rozpoznal uvedenú sekvenciu, tak spätné lomítko
+musí byť zdvojené.
+<br></dd>
+<br>
+
+<dt><b><font color='blue'>[]</font></b></dt>
+<dd>Množina (trieda) znakov. Znaky sú uvedené jednotlivo, alebo ako rozsah,
+ktorý sa uvádza dvoma znakmi oddelenými znakom "<b>-</b>".
+Špeciálne znaky sa vnútri množiny berú ako obyčajné.
+Príklad, <b>[akm$]</b> sa bude zhodovať s akýmkoľvek zo znakov
+"<b>a</b>", "<b>k</b>", "<b>m</b>", alebo "<b>$</b>"; <b>[a-z]</b>
+sa bude zhodovať s akýmkoľvek malým písmenom, a <code>[a-zA-Z0-9]</code>
+sa zhoduje s akýmkoľvek číslom alebo písmenom.
+Znakové triedy ako <code>\w</code> alebo <code>\S</code>, popísané
+nižšie, sa tiež dajú použiť vnútri množiny znakov.
+Pokiaľ chcete v množine zadať obyčajné znaky "<b>]</b>" alebo "<b>-</b>",
+musíte ich uviesť znakom "<b>\</b>", alebo ich zadať ako prvý znak.
+Príklad, vzor <b>[]]</b> sa zhoduje so znakom <code>']'</code>.
+Zhodu na znaky, ktoré naopak do množiny nepatria, možte zadať
+<i>doplnkom</i> množiny. Doplnok sa definuje zadaním "<b>^</b>"
+ako prvého znaku množiny; "<b>^</b>" na ako prvej pozícii
+sa bude zhodovať zo znakom "<b>^</b>" character.
+Príklad, <b>[^5]</b> sa bude zhodovať s akýmkoľvek znakom
+okrem znaku "<b>5</b>", a <b>[^<code>^</code>]</b>
+s akýmkoľvek znakom okrem "<b>^</b>".
+<br></dd>
+
+<dt><b><font color='blue'>|</font></b></strong></dt>
+
+<dd><code>A|B</code>, kde A a B sú ľubovoľné regulárne výrazy,
+je regulárny výraz, ktorý sa bude zhodovať s regulárnym výrazom A alebo B.
+Ľubovoľný počet regulárnych výrazov môže byť takto oddelených znakom
+"<b>|</b>". Toto sa tiež dá použiť vnútri skupín (popísané nižšie).
+Pri prehľadavaní reťazca, su regulárne výrazy, oddelené
+"<b>|</b>", v reťazci vyhľadavané v poradí z ľava do prava.
+Ak je nájdená zhoda s regulárnym výrazom, tak je daná vetva akceptovaná
+a ďaľšie výrazy sa už neskúšajú.
+To znamená, ak je zhoda s <code>A</code> matches, tak <code>B</code>
+sa už neskúša (ani v prípade, že by nastala zhoda).
+Inými slovami, operátor "<b>|</b>" nie je nenásytný.
+Pre zhodu s literálom "<b>|</b>", použite <b>\|</b>,
+alebo ho vložte do množiny znakov, takto <b>[|]</b>.
+<br></dd>
+
+<dt><b><font color='blue'>(...)</font></b></dt>
+<dd>Zhoda s regulárnym výrazom v zátvorkách, označuje začiatok a koniec
+skupiny; obsah skupiny môže byť po zhode získaný a použitý pri vyhľadávaní
+v ďaľších častiach reťazca, a to so špeciálnou sekvenciou
+<b>\<var>číslo</var></b>, popísanou nižšie.
+Pre vyhľadávanie obyčajných znakov "<b>(</b>" alebo
+"<b>)</b>", použite <b>\(</b> alebo <b>\)</b>, alebo ich vložte
+do množiny znakov: <b>[(] [)]</b>.
+<br></dd>
+
+<dt><b><font color='blue'>(?...)</font></b></dt>
+<dd>Toto je zápis rozšírenia (znak "<b>?</b>" nasledujúci za znakom
+"<b>(</b>" inak nemá význam).
+Prvý znak za znakom "<b>?</b>" určuje nasledujúcu syntax a sémantiku.
+Rozšírenia zvyčajne nevytvárajú novú skupinu;
+<b>(?P&lt;<var>name</var>&gt;...)</b> je jediná výnimka z tohto pravidla.
+Nasledujúce sú podporované rozšírenia.
+<br></dd>
+
+
+<dt><b><font color='blue'>(?iLmsux)</font></b></dt>
+<dd>(Jeden alebo viac znakov z množiny "<b>i</b>",
+"<b>L</b>", "<b>m</b>", "<b>s</b>", "<b>u</b>",
+"<b>x</b>".)  Skupina vyhľadáva prázdny reťazec;
+znaky z množiny nastavujú nasledujúce vlajky (<b>re.I</b>, <b>re.L</b>,
+<b>re.M</b>, <b>re.S</b>, <b>re.U</b>, <b>re.X</b>)
+pre celý regulárny výraz. Toto je užitočné, ak chcete uviesť nastavenia
+ako súčasť regulárneho výrazu, namiesto predávania
+<var>vlajka</var> argumentov funkcii <b>compile()</b>.
+
+Všimnite si, že vlajka <b>(?x)</b> mení akým sposobom je výraz parsovaný.
+Mala by byť preto použitá na začiatku regulárneho výrazu,
+poprípade prvá za úvodnými bielymi znakmi. Inak ak pre ňou nie sú
+biele znaky, tak je výsledok vyhľadávania nedefinovaný.
+<br></dd>
+
+
+<dt><b><font color='blue'>(?:...)</font></b></dt>
+<dd>Neskupinová verzia regulárneho výrazu v zátvorkách.
+Zhoda je s ľubovoľným regulárnym výrazom v zátvorách,
+až na to, že daný obsah skupiny nejde použiť v ďaľšom vyhľadávaní
+(to znamená referencovať ho neskôr v regulárnom nad-výraze).
+<br></dd>
+
+
+<dt><b><font color='blue'>(?P&lt;<var>meno</var>&gt;...)</font></b></dt>
+<dd>
+Rovnaké ako regulárny výraz v zátvorkách s tým, že vyhľadaný obsah
+je možné referencovať cez symbolické meno skupiny name <var>meno</var>.
+Mená skupín musia tvoriť validné identifikátory jazyka Python,
+každé meno skupiny môže byť definované práve raz v celom regulárnom výraze.
+Na pomenovanú skupinu je súčasne možné odkazovať sa číslom.
+
+Príklad, z regulárneho výrazu
+<b>(?P&lt;id&gt;[a-zA-Z_]\w*)</b>, môže byť skupina odkazovaná svojim menom
+v argumentoch zhodujúcich sa objektov, ako napríklad <code>m.group('id')</code>
+alebo <code>m.end('id')</code>, a tiež v nasledujúcich regulárnych podvýrazoch
+(napríklad, <b>(?P=id)</b>) a pri nahraďovaní textu
+(ako <code>\g&lt;id&gt;</code>).
+<br></dd>
+
+
+<dt><b><font color='blue'>(?P=<var>name</var>)</font></b></dt>
+<dd>Zhoduje sa s akýmkoľvek textom, s ktorým sa zhodovala
+predošlá skupina s názvom <var>name</var>.
+<br></dd>
+
+
+<dt><b><font color='blue'>(?#...)</font></b></dt>
+<dd>Komentár; obsah v zátvorkách je ignorovaný.
+<br></dd>
+
+<dt><b><font color='blue'>(?=...)</font></b></dt>
+<dd>Zhoda v prípade, že <b>...</b> sa zhoduje s nasledujúcim textom,
+ale neodoberie daný text zo vstupu. Toto sa nazýva výhľadové tvrdenie.
+Príklad, <b>Isaac (?=Asimov)</b> sa bude zhodovať s <code>'Isaac&nbsp;'</code>,
+ale iba v prípade, že za ním nasleduje <code>'Asimov'</code>.
+<br></dd>
+
+<dt><b><font color='blue'>(?!...)</font></b></dt>
+<dd>Zhoda v prípade, že <b>...</b> sa nezhoduje s nasledujúcim textom.
+Toto je negatívne výhľadové tvrdenie. Príklad,
+<b>Isaac (?!Asimov)</b> sa bude zhodovať s <code>'Isaac&nbsp;'</code>
+iba v prípade, že za ním nenasleduje <code>'Asimov'</code>.
+<br></dd>
+
+<dt><b><font color='blue'>(?&lt;=...)</font></b></dt>
+<dd>Zhoda, ak súčasnej pozícii v prehľadávanom reťazci predchádza zhoda
+s <b>...</b>, ktorá končí na súčasnej pozícii.
+Toto sa nazýva <i>pozitívny výhľad dozadu</i>.
+Výraz <b>(?&lt;=abc)def</b> nájde zhodu v "<b>abcdef</b>", kde výhľad dozadu
+tvoria 3 znaky, ktorými je zhoda. Výraz, ktorý tvorí výhľad dozadu
+musí vždy tvoriť konečný počet znakov. Príklad, výrazy <b>abc</b> alebo
+<b>a|b</b> sú povolené, ale <b>a*</b> a <b>a{3,4}</b> nie sú.
+Regulárne výrazy, ktoré začínajú pozitívnym výhľadom dozadu
+sa nikdy nebudú zhodovať so začiatkom prehľadávaného reťazca.
+<br></dd>
+
+<dt><b><font color='blue'>(?&lt;!...)</font></b></dt>
+<dd>Zhoda, ak súčasnej pozícii v prehľadávanom reťazci nepredchádza
+zhoda s <b>...</b>.
+Toto sa nazýva <i>negatívny výhľad dozadu</i>.
+Rovnako ako u pozitívneho výhľadu, regulárny výraz, ktorý tvorí výhľad,
+musí tvoriť konečný počet znakov. Regulárne výrazy začínajúce
+s negatívnym výhľadom dozadu sa môžu zhodovať so začiatkom
+prehľadávaného reťazca.
+<br></dd>
+
+<dt><b><font color='blue'>(?(<var>id/name</var>)yes-pattern|no-pattern)</font></b></dt>
+<dd>Pokúsi sa o zhodu s <b>yes-pattern</b>, ak skupina s daným identifikátorom
+<var>id</var> alebo menom <var>name</var> existuje. Ak neexistuje,
+tak sa pokúsi o zhodu s <b>no-pattern</b>. <b>|no-pattern</b> nie je povinné
+a môže byť vynechané.
+Príklad, <b>(&lt;)?(\w+@\w+(?:\.\w+)+)(?(1)&gt;)</b> je jednoduchý výraz
+na zhodu s emailovou adresou, ktorý sa bude zhodovať s
+<code>'&lt;user@host.com&gt;'</code> a tiež <code>'user@host.com'</code>,
+ale nie s <code>'&lt;user@host.com'</code>.
+<br></dd>
+</dl>
+
+<p>
+Špeciálne sekvencie pozostávajú z "<b>\</b>" a znaku uvedeného v nasledujúcom
+zozname. Pokiaľ sa obyčajný znak v zozname nenachádza, potom sa bude regulárny
+výraz zhodovať s druhým znakom. Príklad, <b>\$</b> sa zhoduje so znakom
+"$".
+<dl>
+<dt><b><font color='blue'>\číslo</font></b></dt>
+
+<dd>Zhoda s obsahom skupiny s tým istým číslom. Skupiny sú číslované od 1.
+Príklad, <b>(.+) \1</b> sa zhoduje s <code>'the the'</code> alebo
+<code>'55 55'</code>, ale nie s <code>'the end'</code> (všimnite si
+medzeru po skupine).  Táto špeciálna sekvencia môže byť použitá na zhodu
+iba s prvými 99 skupinami. Ak prvá cifra v <var>číslo</var> je 0,
+alebo <var>číslo</var> je dlhé 3 oktálove cifry, tak nebude interpretované
+ako číslo skupiny, ale ako znak s oktálovou hodnotou <var>číslo</var>.
+Vnútri "<b>[</b>" a "<b>]</b>" množiny (triedy) znakov,
+všetky číselné uvedenia sa berú ako znaky.
+<br></dd>
+
+<dt><b><font color='blue'>\A</font></b></dt>
+<dd>Zhoda iba na začiatku reťazca.
+<br></dd>
+
+<dt><b><font color='blue'>\b</font></b></dt>
+<dd>Zhoda s prázdnym reťazcom, ale iba na začiatku alebo konci slova.
+Slovo je definované ako sekvencia písmen, číslic a podtržítka, takže koniec
+slova je definovaný znakom, ktorý nie je ani jedno z toho.
+Poznámka, <code>\b</code> je definované ako hranica medzi <code>\w</code>
+a <code>\W</code>, a preto presná množina znakov tvoriacich slovo závisí
+na nastavení vlajok <code>UNICODE</code> a <code>LOCALE</code>.
+Vnútri rozsahu znakov <b>\b</b> reprezentuje znak backspace,
+pre kompatibilitu s reťazcovými literálmi jazyka Python.
+<br></dd>
+
+<dt><b><font color='blue'>\B</font></b></dt>
+<dd>Zhoda s prázdnym reťazcom, ale iba keď <em>nie</em> je na začiatku
+alebo na konci slova. Toto je presný opak <code>\b</code>,
+a preto sa chová podľa nastavení <code>LOCALE</code> a <code>UNICODE</code>.
+<br></dd>
+
+<dt><b><font color='blue'>\d</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, zhoduje sa s ľubovoľnou
+decimálnou číslicou; toto je ekvivalentné <b>[0-9]</b>. 
+S UNICODE sa bude zhodovať s čímkoľvek, čo je klasifikované
+ako číslica v databáze vlastností znakov Unicode.
+<br></dd>
+
+<dt><b><font color='blue'>\D</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, zhoduje sa s ľubovoľným
+nečíselným znakom; toto je ekvivalentné <b>[^0-9]</b>.
+S UNICODE sa zhoduje s akýmkoľvek znakom, ktorý je označený ako nečíslo
+v databáze vlastností znakov Unicode.
+<br></dd>
+
+<dt><b><font color='blue'>\s</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, tak sa zhoduje s akýmkoľvek bielym znakom (medzera, tabelátor a pod.); toto je ekvivalentné množine znakov
+<b>[ \t\n\r\f\v]</b>.
+S UNICODE sa zhoduje s <b>[ \t\n\r\f\v]</b> a tiež akýmkoľvek znakom,
+ktorý je označený ako biely znak v databáze vlastností znakov Unicode.
+<br></dd>
+
+<dt><b><font color='blue'>\S</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, tak sa zhoduje s ne-bielym znakom;
+to je to isté ako množina znakov <b>[^ \t\n\r\f\v]</b>.
+Ak je nastavený UNICODE, tak sa zhoduje s čímkoľvek len nie
+<b>[ \t\n\r\f\v]</b> a znakom označeným ako biely
+v databáze vlastností znakov Unicode.
+<br></dd>
+
+
+<dt><b><font color='blue'>\w</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, tak sa zhoduje s alfanumerickým
+znakom a podtržítkom; to je to isté ako množina <b>[a-zA-Z0-9_]</b>.
+Ak je nastavený UNICODE, tak sa zhoduje so znakmi <b>[0-9_]</b>
+a akýmkoľvek znakom, ktorý je klasifikovaný ako alfanumerický
+v databáze vlastností znakov Unicode.
+<br></dd>
+
+<dt><b><font color='blue'>\W</font></b></dt>
+<dd>Keď nie je nastavená vlajka UNICODE, tak sa zhoduje s nealfanumerickým
+znakom; toto je to isté ako množina <b>[^a-zA-Z0-9_]</b>.
+Pokiaľ je nastavený UNICODE, tak sa zhoduje s čímkoľvek iným než
+<b>[0-9_]</b> a znakmi označenými ako alfanumerické v databáze
+vlastností znakov Unicode.
+<br></dd>
+
+
+<dt><b><font color='blue'>\Z</font></b></dt>
+<dd>Zhoda iba na konci reťazca.
+<br></dd>
+</dl>
+
+
+<p>
+Väčšina štandardných uvedení reťazcových literálov jazyka Python
+je podporovaná parserom regulárnych výrazov:
+</p>
+
+<p>
+<pre>
+\a      \b      \f      \n
+\r      \t      \v      \x
+\\
+</pre>
+</p>
+
+<p>
+Oktálové úvadzanie je zahrnuté v limitovanej forme: pokiaľ je prvá
+číslica 0, alebo sú tam tri oktálové cifry, tak je to považované
+za oktálové uvedenie. Inak sa to chápe ako odkaz na skupinu.
+Pre reťazcové literály majú oktálové uvedenia nanajvýš tri znaky.
+</p>
+
+</BODY>
+</HTML>

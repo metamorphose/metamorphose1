@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<p>
+<b>Nasledujúce sekvencie znakov sú rozpoznané ako formátovanie času a dátumu:</b>
+<br>
+<table border='0' cellpadding='1' cellspacing='8'>
+<tr><th valign='top'><b>%a</b></th><td>skratka dňa v týždni podľa nastavenej lokality (locale)</td></tr>
+<tr><th valign='top'><b>%A</b></th><td>plné meno dňa podľa nastavenej lokality</td></tr>
+<tr><th valign='top'><b>%b</b></th><td>skratka mesiaca podľa nastavenej lokality</td></tr>
+<tr><th valign='top'><b>%B</b></th><td>plné meno mesiaca podľa nastavenej lokality</td></tr>
+<tr><th valign='top'><b>%c</b></th><td>preferovaná reprezentácia dátumu a času súčasnej lokality</td></tr>
+<tr><th valign='top'><b>%C</b></th><td>číslo storočia (rok vydelený 100 and skrátený na číslo v rozsahu range 00 až 99)</td></tr>
+<tr><th valign='top'><b>%d</b></th><td>deň v mesiaci ako decimálne číslo (rozsah 01 až 31)</td></tr>
+<tr><th valign='top'><b>%D</b></th><td>to isté ako %m/%d/%y</td></tr>
+<tr><th valign='top'><b>%e</b></th><td>deň v mesiaci ako decimálne číslo, pred jednociferné číslo sa vloží medzera (rozsah ' 1' to '31')</td></tr>
+<tr><th valign='top'><b>%g</b></th><td>ako %G, ale bez storočia.</td></tr>
+<tr><th valign='top'><b>%G</b></th><td>4-číselny rok odpovedajúci ISO číslu týždňa (viď %V). Toto má rovnaký formát a hodnotu ako %Y,
+až na to, keď ISO číslo týždňa patrí predchádzajúcemu alebo nasledujúcemu roku, tak ten rok sa použije.</td></tr>
+<tr><th valign='top'><b>%h</b></th><td>to isté ako %b</td></tr>
+<tr><th valign='top'><b>%H</b></th><td>hodina v 24-hodinovej notácii (rozsah 00 až 23)</td></tr>
+<tr><th valign='top'><b>%I</b></th><td>hodina v 12-hodinovej notácii (rozsah 01 až 12)</td></tr>
+<tr><th valign='top'><b>%j</b></th><td>deň v roku ako decimálne číslo (rozsah 001 až 366)</td></tr>
+<tr><th valign='top'><b>%m</b></th><td>mesiac ako decimálne číslo (rozsah 01 až 12)</td></tr>
+<tr><th valign='top'><b>%M</b></th><td>minúta ako decimálne číslo</td></tr>
+<tr><th valign='top'><b>%n</b></th><td>znak nový riadok</td></tr>
+<tr><th valign='top'><b>%p</b></th><td>buď `am' alebo `pm' v závislosti na čase, alebo nastavenej lokalite</td></tr>
+<tr><th valign='top'><b>%r</b></th><td>čas v a.m. a p.m. notácii</td></tr>
+<tr><th valign='top'><b>%R</b></th><td>čast v 24 hodinovej notácii</td></tr>
+<tr><th valign='top'><b>%S</b></th><td>sekunda ako decimálne číslo</td></tr>
+<tr><th valign='top'><b>%t</b></th><td>znak tabelátor</td></tr>
+<tr><th valign='top'><b>%T</b></th><td>current time, equal to %H:%M:%S</td></tr>
+<tr><th valign='top'><b>%u</b></th><td>deň ako decimálne číslo [1,7], kde pondelok je 1</td></tr>
+<tr><th valign='top'><b>%U</b></th><td>týždeň v roku ako decimálne číslo, začínajúc s prvou nedeľou ako prvým dňom prvého týždňa</td></tr>
+<tr><th valign='top'><b>%V</b></th><td>ISO 8601:1988 číslo týždňa súčasného roku, rozsah 01 až 53, kde týždeň 1 je prvý týždeň, ktorý
+má aspoň 4 dni v súčasnom roku, a pondelok je prvý deň týždňa. (Použite %G alebo %g pre rok, ktorý odpovedá
+tomuto týždňu.)</td></tr>
+<tr><th valign='top'><b>%W</b></th><td>číslo týždňa súčasného roku, kde prvý pondelok je prvý deň prvého týždňa</td></tr>
+<tr><th valign='top'><b>%w</b></th><td>deň v týždni ako decimálne číslo, nedeľa začína číslom 0</td></tr>
+<tr><th valign='top'><b>%x</b></th><td>preferred date representation for the current locale without the time</td></tr>
+<tr><th valign='top'><b>%X</b></th><td>preferred time representation for the current locale without the date</td></tr>
+<tr><th valign='top'><b>%y</b></th><td>rok ako decimálne číslo bez storočia (rozsah 00 až 99)</td></tr>
+<tr><th valign='top'><b>%Y</b></th><td>rok ako decimálne číslo vrátane storočia</td></tr>
+<tr><th valign='top'><b>%Z</b></th><td>časové pásmo alebo skratka</td></tr>
+<tr><th valign='top'><b>%%</b></th><td>znak `%'</td></tr>
+</table>
+<br><br>
+
+<i>Príklad:</i><br>
+<b>Vstup:</b> %a, %d %b %Y %H.%M.%S +0000<br>
+<b>Výstup:</b> Tue, 06 Feb 2007 20.18.04 +0000<br>
+
+<br>
+<b>Poznámka:</b> Znak dvojbodka « : » nejde použiť pretože ho používa Métamorphose
+na označenie začiatku špeciálnych operácií.
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Métamorphose Readme</title>
+<style type='text/css'>
+/* Text */
+.OSes{
+	color:#6B6FA1; /* light blue-mauve */
+	font-weight: 700;
+}
+.heading{color:#000099;
+	font-family: Courier, "Courier New", monospace;
+}
+P.copyright{font-size:13px; color:darkgrey}
+.standOut{
+	color:#6E0601;
+	font-size:17;
+}
+.versionTxt{
+	color:#6E0601;
+	letter-spacing:1;
+	font-size:16;
+}
+A:link{color:blue;}
+A:visited{color:#330099;}
+A:hover{color:#CC3333; text-decoration:none;}
+
+/* List */
+ul{
+	margin-top:1px;
+	list-style-type: square;
+}
+ol{list-style-type: decimal;}
+</style>
+</head>
+
+<BODY BGCOLOR='white'>
+
+<center>
+<h2>Métamorphose Prečítaj si</h2>
+</center>
+
+<p>
+<b>Poznámka:</b> Toto je kópia
+<b><a href="http://file-folder-ren.sourceforge.net/index.php?page=Help">nápovedy</a></b>
+z web stránky Métamorphose, kde nájdete aktuálne informácie.<br>
+</p>
+<br>
+
+<p>
+<b class='heading'>Inštalácia zo setup.exe súboru:</b><br>
+Uživatelia Win32 si môžu namiesto zdrojovej distribúcie 
+<a href="http://sourceforge.net/project/showfiles.php?group_id=146403">stiahnuť</a>
+a spustiť setup súbor. Métamorphose sa nainštaluje rovnako ako akýkoľvek Win32 program,
+a bude prístupný zo štart menu.
+</p>
+<br>
+
+<p>
+<b class='heading'>Inštalácia zo zdrojových súborov:</b><br>
+<b>Je potrebné mať nainštalovanú správnu verziu wxPython (niektoré distribúcie ju majú):</b>
+
+<ul>
+<li>Python verzie 2.4 alebo 2.5 je dostupný z <a href='http://www.python.org/'>www.python.org</a>
+<li>wxPython 2.6 je dostupný z<a href='http://www.wxpython.org'>www.wxpython.org</a>.<br>
+Od verzie .3.0 <b>Métamorphose pracuje iba s Unicode verziou!</b>
+</ul>
+
+<ul>
+  <li>Debian balíčky potrebné pre wxPython:
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=libwxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>libwxgtk2.6</a>,
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=python-wxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>python-wxgtk2.6</a>
+  </li>
+</ul>
+<br>
+<b>Inštalácia:</b><br>
+Rozbaľte súbory do vybraného adresára. Pokiaľ ste na platforme Linux alebo freeBSD,
+choďte do rozbaleného adresára a zadajte (ako root) príkaz:<br>
+<pre>
+$ make all
+</pre>
+<br>
+
+<b>Spustenie:</b><br>
+Spustite 'metamorphose.py' s Python interpreterom z rozbaleneho 'metamorphose' adresára.<br>
+Od verzie 0.3.0 môžte zadať adresár, ktorého obsah sa má načítať.<br>
+Medzery sú dovolené, takže napríklad toto bude fungovať:
+<pre>$ python Metamorphose.py /srv/samba/Windows Likes Spaces</pre>
+<br>
+
+<i>Extra Linux informácia:</i><br>
+makefile sa postará o všetko, je nezávislý na architektúre a distribúcii.<br>
+Métamorphose bude nainštalovaný do <i>/usr/share/metamorphose</i>,
+program spustíte príkazom <pre>$ metamorphose</pre>
+manuálovú stránku zobrazíte príkazom <pre>$ man metamorphose</pre>
+Ak používate window manager kompatibilný s  <a href="http://www.freedesktop.org/">freedesktop.org</a>
+(ako Gnome alebo KDE), tak by sa <I>Métamorphose</I> malo objaviť v 'Applications -> Accessories'.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>Ako odstrániť Métamorphose:</b><br>
+<b>Windows Inštalátor:</b><br>
+Spustite <I>odinštalovať</I> alebo <I>odstrániť</I> z 'pridať alebo odstrániť programy' z kontrolného panelu.
+<br><br>
+<b>Zdrojové súbory (všetky):</b>
+<ul>
+<li>Začínajúc s verziou 0.4.0, všetky uživateľské dáta sa odstránia zmazaním adresárov:<br>
+Windows: C:\Documents and Settings\USERNAME\Application Data\.metamorphose<br>
+Linux: /home/USERNAME/.metamorphose<br>
+Mac: /Library/Application Support/.metamorphose</li>
+<li>Zmazať manuálovú stránku, ak bola inštalovaná.</li>
+<li>Zmazať zdrojové súbory.</li>
+</ul>
+<b>Zdrojové súbory (Linux & FreeBSD):</b>
+<pre>
+$ make remove
+</pre>
+Navyše pre odstránenie všetkých uživateľských dát:
+<pre>
+$ make remove remusr=1
+</pre>
+
+</p>
+
+<br>
+
+<p>
+<b class='heading'>Pomôž mi pomôcť tebe:</b><br>
+Môžte pomôcť Métamorphose tak, že pošlete Vaše pripomienky.
+<ul>
+<li>Poslať <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765156">oznámenie o chybe</a></li>
+<li>Poslať <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765159">žiadosť o novú funkciu programu</a></li>
+</ul>
+</p>
+
+<br>
+<p>
+<b class='heading'>Testované operačné systémy:</b><br>
+<b>Spustené skompilované:</b><br>
+<B class='OSes'>Windows 95, 98, ME:</B> Stabilné od  Métamorphose v0.2.3a and nižšej.
+Od verzie 0.3.0 sa vyskytú problémy, ako pády aplikácie pri prístupe na horné menu.<br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stabilné, podporuje témy.<br>
+<br>
+<b>Spustené zo zdrojákov:</b><br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stabilné, podporuje témy.<br>
+<B class='OSes'>Linux 2.6 - GNOME:</B> Stabilné, podporuje témy.<br>
+<B class='OSes'>Linux 2.6 - KDE:</B> Stabilné.<br>
+<B class='OSes'>Mac OSx86:</B> Stabilné, podporuje témy.<br>
+<B class='OSes'>FreeBSD 5.5 - Window Maker:</B> Prevažne stabilné. Výber reštartu aplikácie pri
+zmene jazyka môže zamrznúť aplikáciu. Ale jazyk je správne zmenený potom, čo je aplikácia
+zabitá a znovu spustená. Taktiež dropdown box-y nie vždy správne spúšťajú udalosti.<br>
+<B class='OSes'>FreeBSD 6.2 - Fluxbox:</B> Stabilné.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>Známe problémy:</b><br>
+<b>Program zamrzne pri prechádzaní veľkého množstva súborov/adresárov:</b><br>
+Program v skutočnosti nezamrzne, iba trvá dlhšiu dobu než sa načítajú všetky položky.
+Počas tejto doby sa aplikácia neobnovuje, takže sa javí ako zamrznutá, ale v skutočnosti pracuje.
+Takto strávený čas závisí na výkone počítača, na tom či daný adresár je lokálny alebo vzdialený,
+a samozrejme na počte položiek.
+<br><br>
+
+<b>Python chyba - "nedá sa nastaviť locale na 'xx_XX' ":</b><br>
+Týka sa to iba Linux desktopov. Uistite sa, že máte nainštalovanú podporu daného jazyka,
+pretože niektoré distribúcie (ako Ubuntu) defaultne neinštalujú jazykovú podporu iných jazykov,
+než jazyka použitého pri inštalácii.
+</p>
+<br><br>
+
+<!-- end page content -->
+
+</body>
+</html>
+

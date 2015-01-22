@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'>
+<b>Toutes opérations sont créées dans le panneau <I>- Essentiel -</I>.</b></font><br>
+<font color='red'>Sans le modifier, il est impossible de renommer.</font>
+<br>
+
+<br>
+[<a href='#buttons'>Les Boutons</a>]&nbsp;&nbsp;
+[<a href='#operations'>l'Ordre des Opérations</a>]<br>
+[<a href='#fields'>Les Champs d'Options</a>:
+<a href='#search'>Rechercher et Remplacer/Modifier/Déplacer</a> &nbsp;<a href='#insert'>Insérer</a> &nbsp;<a href='#length'>Modifier la Longueur</a>]
+<br>
+
+<a name='buttons'><P></a>
+<B>Les Boutons:</B><br>
+Lorsque les boutons sont activés, un bout de texte est inséré dans une zone texte,
+et, quand la prévisualisation est effectuée, ce texte sera transformé en opération. Par exemple, en activant la zone
+<I>Préfixe</I> puis en cliquant sur le bouton <I>date</I>, le texte «:date:» apparaît, et la date actuelle est
+placée en préfixe.<br>
+Ce système permets une grande flexibilité, car un bout de texte normal peut-être mélangé avec des opérations. Supposons
+qu'un séparateur doit être placé entre le préfixe et le nom d'origine. Après avoir mis la date, entrez «_», la zone
+contient maintenant «:date:_», et comme aujourd'hui est le 6 août 1223, les fichiers seront renommés ainsi :
+«08-06-1223_fichier.ext»<br>
+(Notez que par défaut la date est en style Nord Américain, ce qui peut être changé dans le panneau <i>date et heure</i>)<br>
+Il est aussi possible d'ajouter plusieurs opérations ensembles, du moment que le nom final n'ait pas plus de
+255 caractères. Le suivant est parfaitement valable:<br>
+:numr:_un texte_:date:_:heure:_:№piste:-:artiste:-:titre:
+</P>
+<br>
+
+<p>
+<img src='images/sub-dir_btn.png' border='0'><br>
+Le bouton <I>sous-rép.</I> insère un séparateur dans le champ <I>rép.</I>, qui apparaît comme 
+le texte ':/'. Pour les autres champs, il ne fait rien.
+</p>
+<br>
+
+<p>
+<img src='images/numbering_btn.png' border='0'><br>
+Le bouton <I>numération</I> insère une séquence numérique. Par défaut,
+la numération commence par 1 avec un incrément de 1, et qui est automatiquement rembourrée avec 0 par rapport au
+nombre d'objets - donc avec 100 objets, le compteur sera : 001, 002, etc... Tout ces réglages et d'autres
+peuvent être changés dans le panneau <I>numération</I>.
+</p>
+<br>
+
+<p>
+<img src='images/date_time_btn.png' border='0'><br>
+Les boutons <I>Date</I> et <I>Heure</I> insèrent la date ou l'heure actuelle, en utilisant comme format
+MM-JJ-AAAA et HH.MM.SS, respectivement. Tout ces réglages et d'autres
+peuvent être changés dans le panneau <I>Date et Heure</I>.
+</p>
+<br>
+
+<p>
+<img src='images/id3_btn.png' border='0'><br>
+Le bouton <I>ID3</I> insère l'information d'une métadonnée ID3 si présente du fichier.mp3.
+Je dis 'du' fichier car chaque fichier dans la liste sera analysé individuellement. Pour choisir
+quelle métadonnée sera insérée, utilisez la liste déroulante située juste à coté. Si un fichier mp3 ne
+contient pas la métadonnée demandée, un espace est inséré. Les autres genres de fichiers sont ignorés.
+</p>
+<HR width='50%' align='center'>
+
+<a name='operations'><P></a>
+<B>l'Ordre Des Opérations:</B><br>
+L'ordre par lequel les opérations seront effectuées. Celui-ci est différent de l'ordre de
+l'interface (mais plus logique, je l'espère).
+<OL>
+<LI>Modification de la Longueur
+<LI>Rechercher et : Remplacer, Modifier, ou Déplacer
+<LI>Préfixe
+<LI>Suffixe
+<LI>Insérer
+<LI>Répertoire
+</OL>
+</p>
+
+<HR width='50%' align='center'>
+
+<a name='fields'><P></a>
+<B>Les Champs d'Options:</B><br>
+Le coeur de Métamorphose. Toutes les opérations commencent ici. 
+</p>
+<P>
+<img src='images/operations.png' border='0'><br>
+Ces cases à cocher permettent de choisir quelle partie du nom sera modifiée.
+Si <i>Le Nom</i> est coché, les répertoires et les noms des fichiers seront modifiés.
+Si <i>L'extension</i> est coché, les extensions des fichiers seront modifiées.
+</P>
+<br>
+
+<P>
+<img src='images/dir.png' border='0'><br>
+Permets d'ajouter un répertoire (dossier) et d'y placer tous les objets à renommer.
+il est possible d'ajouter des sous-répertoires avec le bouton <i>sous-rép.</i>, ainsi que
+d'utiliser tous les autres boutons décrits ci-dessus.
+</P>
+<br>
+
+<P>
+<img src='images/prefix.png' border='0'><br>
+Ajouter un préfixe aux objets.
+</P>
+<br>
+
+<P>
+<img src='images/suffix.png' border='0'><br>
+Ajouter un suffixe aux objets.
+</P>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='search'><P></a>
+<img src='images/search.png' border='0'><br>
+un outil très puissant pour effectuer une recherche puis de modifier le résultat de façons
+différentes. La plupart des opérations sont effectuées de cette manière.<br>
+Il est possible de rechercher par texte simple, par expression régulière, ou par position. Le résultat
+peut être remplacé, changé de majuscule en minuscule (entre autres), ou bien déplacé.
+</P>
+
+<P>
+<img src='images/search_text.png' border='0'><br>
+Le texte à trouver. N'importe quel caractère peut être entré - pour chercher un espace,
+il suffit d'appuyer sur la barre d'espace. Si ce champ est laissé vide, le résultat de la
+recherche est le nom entier.
+</P>
+
+<P>
+<img src='images/case_sensitive.png' border='0'><br>
+Différencier entre majuscules et minuscules.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/reg_exp.png' border='0'><br>
+Trouver par expression régulière. Chaque occurrence sera traitée. Cocher <i>I</i> pour ne pas différencier
+entre majuscules ou minuscules (Insensible à la casse), cocher <i>U</i> pour chercher en Unicode (par
+exemple pour trouver des caractères comme «â, ¥, Д» avec «\w»).
+</P>
+
+<P>
+<img src='images/reg_exp_charset.png' border='0'><br>
+Chercher un groupe de caractères par expression régulière. <i>^</i> trouvera tout caractère qui n'est
+PAS dans le groupe, <i>[a-z]</i> trouvera tout caractère alphabétique (majuscule et minuscule), et
+<i>[0-9]</i> trouvera tout caractère numérique.
+<br>Ces groupes peuvent être utilisés sans définir une expression régulière. Sinon, l'expression régulière
+est compilée ainsi : « (expression régulière) <b>|</b> (groupe de caractères) »<br>
+Aussi, «[a-z]» n'est pas vraiment «[a-z]», mais «[^\W\d]» pour un meilleur rendement sous Unicode.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/pos.png' border='0'><br>
+Trouver par position. Le premier numéro spécifie la position de départ. 0 est toujours le premier
+caractère du nom.
+</P>
+
+<P>
+<img src='images/pos_len.png' border='0'><br>
+Le nombre de caractères à trouver. Ne vous inquiétez pas si ce nombre est supérieur à la longueur
+du nom.
+</P>
+
+<P>
+<img src='images/pos_start.png' border='0'><br>
+Spécifier de commencer par le <i>début</i> ou la <i>fin</i> du nom. Si la <i>fin</i> est choisie, 
+la valeur de la <i>position</i> est alors calculée automatiquement par rapport à la <i>longueur</i>.
+</P>
+<br>
+<hr width=100% align='center'><br>
+
+<P>
+<img src='images/replace.png' border='0'><br>
+Remplacer chaque occurrence avec une opération ou un texte. Si une expression régulière est utilisée,
+il est permis d'utiliser une référence arrière (anglais : backreference), par exemple «\1».
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/modify.png' border='0'><br>
+Changer de majuscules en minuscules et vice-versa de manières différentes (changer la casse).
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/move.png' border='0'><br>
+Déplacer la première occurrence.
+</P>
+
+<P>
+<img src='images/move_pos.png' border='0'><br>
+Utiliser une position fixe. 0 = premier caractère, 1 = deuxième caractère,
+-1 = dernier caractère
+</P>
+
+<P>
+<img src='images/move_txt.png' border='0'><br>
+Utiliser un texte pour calculer le déplacement. Il est possible de déplacer <i>avant</i>, <i>après</i>, ou bien
+<i>remplacer</i> ce texte. Si aucune occurrence du texte n'est trouvée, rien n'est fait. L'utilisation
+d'expressions régulières est permise.
+</P>
+</td></table>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='insert'><P></a>
+<img src='images/insert.png' border='0'><br>
+Cette ligne permet d'insérer un texte ou une opération à un point précis du nom.
+</p>
+
+<P>
+<img src='images/insert_pos.png' border='0'><br>
+Spécifier un point absolu pour insérer le résultat de la recherche. Commence par 0 et
+forme un boucle, donc 0 = premier caractère, 1 = deuxième caractère, -1 = dernier caractère.
+</P><br>
+</td></table>
+
+<br><br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='length'><P></a>
+<img src='images/mod_length.png' border='0'><br>
+Changer la longueur du nom de façons différentes.
+</p>
+
+<P>
+<img src='images/mod_length_op.png' border='0'><br>
+Comment modifier la longueur. <i>Couper</i> raccourcira le nom à une taille définie, <i>Rembourrer</i> le rallongera,
+et <i>Les Deux</i>, incroyablement, fait les deux.
+</P>
+
+<P>
+<img src='images/mod_length_size.png' border='0'><br>
+La nouvelle taille du nom. Si <i>Rembourrer</i> est utilisé est le nom est déjà au moins cette
+longueur, ou si <i>Couper</i> est utilisé et que le nom est déjà au plus cette longueur, rien
+n'est fait. <i>Les Deux</i>, d'une manière ou d'une autre, mettra tout les noms à exactement la même longueur.
+</P>
+
+<P>
+<img src='images/mod_length_direction.png' border='0'><br>
+Direction de la modification.
+</P>
+
+<P>
+<img src='images/mod_length_pad.png' border='0'><br>
+Le caractère à utiliser pour le rembourrage. Tous les caractères sont permis.
+</P>
+
+<P>
+<img src='images/mod_length_pad_pos.png' border='0'><br>
+Spécifier un point absolu pour insérer le commencement du rembourrage. Si laissé à 0, alors
+ce sera le premier caractère <b>de la direction choisie</b>. Si autre que 0, le fonctionnement
+est alors similaire à <i>insérer à position</i> (0 = premier caractère, 1 = deuxième caractère,
+-1 = dernier caractère), et ignore la <i>direction</i>.
+</P>
+<br>
+</td></table>
+<br>
+<br>
+
+<BODY>
+</HTML>

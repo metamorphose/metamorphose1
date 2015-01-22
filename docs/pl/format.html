@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//PL">
+<HTML>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<p>
+<b>Następujące znaki są rozpoznawane przy tworzeniu formatu:</b>
+<br>
+<table border='0' cellpadding='1' cellspacing='8'>
+<tr><th valign='top'><b>%a</b></th><td>skrótowa nazwa dnia tygodnia zgodnie z lokalizacją</td></tr>
+<tr><th valign='top'><b>%A</b></th><td>pełna nazwa dnia tygodnia zgodnie z lokalizacją</td></tr>
+<tr><th valign='top'><b>%b</b></th><td>skrótowa nazwa miesiąca zgodnie z lokalizacją</td></tr>
+<tr><th valign='top'><b>%B</b></th><td>pełna nazwa miesiąca zgodnie z lokalizacją</td></tr>
+<tr><th valign='top'><b>%c</b></th><td>preferowana prezentacja daty i czasu zgodnie z lokalizacją</td></tr>
+<tr><th valign='top'><b>%C</b></th><td>numer wieku (rok podzielony przez 100 i skrócony do liczby całkowitej, przedział od 00 do 99)</td></tr>
+<tr><th valign='top'><b>%d</b></th><td>dzień miesiąca jako liczba dziesiętna (przedział od 01 do 31)</td></tr>
+<tr><th valign='top'><b>%D</b></th><td>to samo co %m/%d/%y</td></tr>
+<tr><th valign='top'><b>%e</b></th><td>dzień miesiąca jako liczba dziesiętna, przy czym pojedyncza cyfra poprzedzona jest spacją (przedział od " 1" do "31")</td></tr>
+<tr><th valign='top'><b>%g</b></th><td>tak jak %G, ale bez uwzględnienia wieku</td></tr>
+<tr><th valign='top'><b>%G</b></th><td>rok w zapisie czterocyfrowym, powiązany z numerem tygodnia wg ISO. Symbol ten ma ten sam format i wartość jak %Y, z tym wyjątkiem, że jeśli numer tygodnia wg ISO należy do poprzedniego lub następnego roku, to poprzedni lub następny rok jest zwracany przez ten symbol.</td></tr>
+<tr><th valign='top'><b>%h</b></th><td>tak jak %b</td></tr>
+<tr><th valign='top'><b>%H</b></th><td>godzina jako liczba dziesiętna w systemie 24-godzinnym (przedział od 00 do 23)</td></tr>
+<tr><th valign='top'><b>%I</b></th><td>godzina jako liczba dziesiętna w systemie 12-godzinnym (przedział od 01 do 12)</td></tr>
+<tr><th valign='top'><b>%j</b></th><td>dzień roku jako liczba dziesiętna (przedział od 001 do 366)</td></tr>
+<tr><th valign='top'><b>%m</b></th><td>miesiąc jako liczba dziesiętna (przedział od 01 do 12)</td></tr>
+<tr><th valign='top'><b>%M</b></th><td>minuty jako liczba dziesiętna</td></tr>
+<tr><th valign='top'><b>%n</b></th><td>znak nowej linii</td></tr>
+<tr><th valign='top'><b>%p</b></th><td>albo "am" lub "pm" zgodnie z podanym czasem, albo łańcuchy znaków odpowiadające lokalizacji</td></tr>
+<tr><th valign='top'><b>%r</b></th><td>czas w notacji a.m. lub p.m.</td></tr>
+<tr><th valign='top'><b>%R</b></th><td>czas w notacji 24-godzinnej</td></tr>
+<tr><th valign='top'><b>%S</b></th><td>sekundy jako liczba dziesiętna</td></tr>
+<tr><th valign='top'><b>%t</b></th><td>znak tabulacji</td></tr>
+<tr><th valign='top'><b>%T</b></th><td>aktualny czas, odpowiednik %H:%M:%S</td></tr>
+<tr><th valign='top'><b>%u</b></th><td>numer dnia tygodnia jako liczba dziesiętna [1,7], gdzie 1 oznacza poniedziałek</td></tr>
+<tr><th valign='top'><b>%U</b></th><td>numer tygodnia aktualnego roku jako liczba dziesiętna, począwszy od pierwszej niedzieli jako pierwszego dnia pierwszego tygodnia</td></tr>
+<tr><th valign='top'><b>%V</b></th><td>numer tygodnia aktualnego roku wg ISO 8601:1988 jako liczba dziesiętna, przedział od 01 do 53, gdzie tydzień 1 jest pierwszym tygodniem, którym ma co najmniej 4 dni w aktualnym roku, przy czym pierwszym dniem tygodnia jest poniedziałek. (Przy użyciu %G lub %g otrzymuje się rok, który odpowiada numerowi tygodnia dla podanego znacznika czasu).</td></tr>
+<tr><th valign='top'><b>%W</b></th><td>numer tygodnia aktualnego roku jako liczba dziesiętna, począwszy od pierwszego poniedziałku, jako pierwszego dnia pierwszego tygodnia</td></tr>
+<tr><th valign='top'><b>%w</b></th><td>dzień tygodnia jako liczba dziesiętna, począwszy od niedzieli - numer 0</td></tr>
+<tr><th valign='top'><b>%x</b></th><td>preferowana reprezentacja daty, zgodnie z lokalizacją, bez czasu</td></tr>
+<tr><th valign='top'><b>%X</b></th><td>preferowana reprezentacja czasu, zgodnie z lokalizacją, bez daty</td></tr>
+<tr><th valign='top'><b>%y</b></th><td>rok jako liczba dziesiętna, bez uwzględnienia wieku (przedział od 00 do 99)</td></tr>
+<tr><th valign='top'><b>%Y</b></th><td>rok jako liczba dziesiętna, z wiekiem włącznie</td></tr>
+<tr><th valign='top'><b>%Z</b></th><td>strefa czasowa, nazwa lub skrót</td></tr>
+<tr><th valign='top'><b>%%</b></th><td>znak "%"</td></tr>
+</table>
+<br><br>
+
+<i>Przykład:</i><br>
+<b>Format:</b> %a, %d %b %Y %H.%M.%S +0000<br>
+<b>Wynik:</b> wto, 06 lut 2007 21.08.59 +0000<br>
+
+<br>
+<b>UWAGA:</b> Nie możesz używać dwukropka « : » ponieważ jest on używany przez Métamorphose do określania uruchomienia specjalnych operacji.
+</body>
+</html>

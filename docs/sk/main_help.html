@@ -1,0 +1,307 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'>
+<b>V záložke <I>Hlavný</I> sa nastavujú premenovávacie operácie.</b></font>
+<br>
+<font color='red'>Tu musí byť nastavené akékoľvek premenovanie.</font>
+<br>
+
+<br>
+[<a href='#buttons'>Tlačítka</a>]&nbsp;&nbsp;
+[<a href='#operations'>Poradie operácií</a>]<br>
+[<a href='#fields'>Renaming Fields</a>:
+    <a href='#search'>Vyhľadať a Nahradiť/Zmeniť/Presunúť</a> &nbsp;
+    <a href='#insert'>Vložiť</a> &nbsp;
+    <a href='#length'>Zmeniť dĺžku
+</a>]
+<br>
+
+<a name='buttons'><P></a>
+<B>TLAČÍTKA:</B><br>
+Tlačítka fungujú vložením textu do textového poľa.
+Po stlačení tlačítka <I>Náhľad</I> bude podľa textu vykonaná operácia.
+Príklad, aktivovaním poľa <I>Prefix</I> a stlačením tlačítka
+<I>dátum</I>, sa v poli objaví text ':dátum:', ktorý bude v každej
+premenovávanej položke nahradený súčasným dátumom.
+Toto poskytuje flexibilitu v kombinovaní jednotlivých operácií a textu.
+Takže ak chcete mať oddeľovač medzi predponou a pôvodným menom,
+tak po stlačení tlačítka zadajte znak '_', a pole bude potom obsahovať
+':dátum:_', and assuming today is august 6, 1223, tak súbory budú premenované
+na: 08-06-1223_file.ext<br>
+Zadať môžte ľubovoľný počet operácii a množstvo textu,
+pokiaľ celková dĺžka nepresiahne 255 znakov.
+Napríklad toto je validné zadanie:<br>
+:číslo:_nejaký text_:dátum:_:čas:_:stopa:-:skladateľ:-:názov:
+</P>
+<br>
+
+<p>
+<img src='images/sub-dir_btn.png' border='0'><br>
+Tlačítko <I>podadresár</I> vloží oddelovač adresárov do poľa
+<I>Adresár</I>.
+Oddeľovač sa objaví ako text ':/', v ostatných poliach nemá efekt.
+</p>
+<br>
+
+<p>
+<img src='images/numbering_btn.png' border='0'><br>
+Tlačítko <I>číslovanie</I> vloží číselnú sekvenciu.
+Defaultne, číslovanie začína na 1, inkrementuje sa o 1,
+a jednotlivé čísla sú zarovnané cifrou 0 až po najvyšší rád
+(príklad, 100 položiek bude číslovaných 001, 002, atď.).
+Všetky tieto nastavenia sa dajú meniť v záložke <I>Číslovanie</I>.
+</p>
+<br>
+
+<p>
+<img src='images/date_time_btn.png' border='0'><br>
+Tlačítka <I>dátum</I> a <I>čas</I> vkladajú dátum a čas v nastavenom formáte.
+Defaultný formát dátumu je: MM-DD-YYYY, a času: HH.MM.SS (12 hodinový formát).
+Obe použijú ako hodnotu súčasný dátum/čas.
+Pre zmenu nastavení použite záložku <I>Dátum a Čas</I>.
+</p>
+<br>
+
+<p>
+<img src='images/id3_btn.png' border='0'><br>
+Tlačítko <I>ID3</I> vloží ID3 informáciu z daného .mp3 súboru.
+Konkrétnu časť ID3 informácie si vyberiete z menu vedľa tlačítka.
+Ak mp3 súbor neobsahuje ID3 informáciu, tak na miesto nebude nič vložené.
+Adresáre a súbory iného typu samozrejme ID3 informáciu neobsahujú.
+</p>
+<HR width='50%' align='center'>
+
+<a name='operations'><P></a>
+<B>PORADIE OPERÁCIÍ:</B><br>
+Poradie, v ktorom su jednotlivé operácie vykonávané aplikáciou.
+Poradie operácií je odlišné od poradia v interface (ale viac logické, nie?),
+tak som premýšľal, že ich vymenujem.
+<OL>
+<LI>Upraviť dľžku
+<LI>Vyhľadať a Nahradiť / Upraviť / Presunúť
+<LI>Predpona
+<LI>Prípona
+<LI>Vložiť
+<LI>Adresár
+</OL>
+</p>
+
+<HR width='50%' align='center'>
+
+<a name='fields'><P></a>
+<B>PREMENOVÁVACIE POLIA:</B><br>
+Toto je vnútorné srdce Métamorphose.
+Tu musíte urobiť zmeny pre akékoľvek premenovanie.
+</p>
+<P>
+<img src='images/operations.png' border='0'><br>
+Tieto zaškrtávacie polia určujú, ktorá časť názvu položky bude modifikovaná.
+Ak je zaškrtnuté 'Meno', tak operácie budú vykonávané
+nad názvami adresárov a súborov.
+Ak je zaškrtnutá prípona, tak budú modifikované typové prípony súborov.
+</P>
+<br>
+
+<P>
+<img src='images/dir.png' border='0'><br>
+Toto umožňuje pridať adresár, do ktorého sa presunú premenovávané položky.
+Podadresáre sa dajú pridávať tlačítkom <I>'podadresár'</I>.
+V tomto poli sa tiež dajú použiť všetky ostatné popísané tlačítka.
+</P>
+<br>
+
+<P>
+<img src='images/prefix.png' border='0'><br>
+Pridať do výsledného názvu predponu.
+</P>
+<br>
+
+<P>
+<img src='images/suffix.png' border='0'><br>
+Pridať do výsledného názvu príponu.
+</P>
+<br>
+
+<br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='search'><P></a>
+<img src='images/search.png' border='0'><br>
+Toto je mocný nástroj na prehľadávanie názvov a nahradzovanie nájdených
+podreťazcov iným textom. V názvoch premenovávaných položiek môžte
+vyhľadávať text pomocou regulárnych výrazov, alebo pozície.
+Nájdený text potom môžte nahradiť iným textom, zmeniť veľkosť písmen,
+alebo ho presunúť na inú pozíciu.
+</P>
+
+<P>
+<img src='images/search_text.png' border='0'><br>
+Text, ktorý sa má vyhľadávať. Môžte vložiť ľubovoľný znak,
+takže pre hľadanie medzery jednoducho stlačte spacebar.
+Ak je toto pole ponechané prázdne, tak sa zhoduje celý názov.
+</P>
+
+<P>
+<img src='images/case_sensitive.png' border='0'><br>
+Vyhľadávanie textu bude rozlišovať veľkosť písmen.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/reg_exp.png' border='0'><br>
+Vyhľadávanie regulárneho výrazu.
+Every match will be acted upon.
+Zaškrtnutím <i>I</i> bude vyhľadávanie rozlišovať veľkosť písmen,
+zaškrtnutím <i>U</i> sa aktivuje Unicode mód (pre zhodu
+s ne-ascii znakmi ako je 'é' pomocou zápisov ako je \w).
+</P>
+
+<P>
+<img src='images/reg_exp_charset.png' border='0'><br>
+Vyhľadať regulárny výraz tvorený množinou znakov.
+<i>^</i> zhoda s ľubovoľným znakom, ktorý nie je v množine znakov.
+<i>[a-z]</i> zhoda s všetkými abecednými znakmi (veľké aj malé písmená),
+a <i>[0-9]</i> je zhoda na všetky čísla.
+<br>
+Množiny znakov sa dajú použiť bez zadania regulárneho vyrazu v textovom poli.
+Inak je celý regulárny výraz tvorený takto:
+'(regulárny výraz v poli) <b>|</b> (množiny znakov)'.<br>
+Taktiež [a-z] neznamená v skutočnosti znaky '[a-z]', ale je to '[^\W\d]'
+pre správnu zhodu pri zapnutom Unicode móde.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/pos.png' border='0'><br>
+Hľadať od pozície.
+Prvý znak, od ktorého hľadať.
+0 je vždy prvý znak v názve.
+</P>
+
+<P>
+<img src='images/pos_len.png' border='0'><br>
+Počet znakov tvoriacich zhodu.
+Pokiaľ je počet znakov viac ako dĺžka slova, tak to nevadí.
+</P>
+
+<P>
+<img src='images/pos_start.png' border='0'><br>
+Rozhoduje, či sa zhoda počíta od <i>začiatku</i> názvu alebo od <i>konca</i>.
+Ak od <i>konca</i>, tak hodnota v poli <i>Pozícia</i> sa automaticky
+mení podľa hodnoty v poli <i>Dĺžka</i>.
+</P>
+<br>
+<hr width=100% align='center'><br>
+
+<P>
+<img src='images/replace.png' border='0'><br>
+Nahradiť každý výskyt zadaným textom alebo operáciou.
+Pri použití regulárnych výrazov môžte použiť spätné referencie
+(zadaním "\1" bez úvodzoviek).
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/modify.png' border='0'><br>
+Zmeniť veľkosť písmen každého výskytu.
+</P>
+<br>
+<hr width=75% align='center'>
+
+<P>
+<img src='images/move.png' border='0'><br>
+Presunúť prvú zhodu na vybranú pozíciu.
+</P>
+
+<P>
+<img src='images/move_pos.png' border='0'><br>
+Presunúť na pevnú pozíciu. 0 znamená pred prvý znak názvu,
+-1 za posledný znak.
+</P>
+
+<P>
+<img src='images/move_txt.png' border='0'><br>
+Použiť zadaný text ako pozíciu pre presun textu.
+Nájdená zhoda sa dá vložiť <i>pred</i> textom alebo <i>po</i> texte,
+alebo <i>nahradiť</i> textom.
+Ak nie je nájdená zhoda, tak sa nič nevykoná.
+Dajú sa použiť aj regulárne výrazy.
+</P>
+</td></table>
+<br>
+
+<br>
+
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='insert'><P></a>
+<img src='images/insert.png' border='0'><br>
+Použite toto na vloženie textu alebo operácie na zadanú pozíciu v názve.
+</p>
+
+<P>
+<img src='images/insert_pos.png' border='0'><br>
+Špecifikuje absolútnu pozíciu, odkiaľ sa má text vkladať.
+Začína sa od 0 a na konci začína od začiatku, takže 0 = pred prvý znak,
+1 = pred druhý , -1 za posledný znak.
+</P><br>
+</td></table>
+
+<br><br>
+<table border='1' cellpadding='10' width='100%'>
+<td bgcolor='#FFFFFF'>
+<a name='length'><P></a>
+<img src='images/mod_length.png' border='0'><br>
+Zmena dľžky výsledného mena súboru rôznymi spôsobmi.
+</p>
+
+<P>
+<img src='images/mod_length_op.png' border='0'><br>
+Ako upraviť dĺžku.
+<i>Zarovnať</i> zvýši dľžku na zadanú veľkosť,
+<i>Skrátiť</i> skráti dľžku na zadanú veľkosť,
+a <i>Oboje</i> zarovnáva aj kráti na zadanú veľkosť.
+</P>
+
+<P>
+<img src='images/mod_length_size.png' border='0'><br>
+Mení dľžku na zadanú veľkosť.
+Ak ste zvolili iba <i>Zarovnať</i> a dĺžka mena má zadanú alebo väčšiu veľkosť,
+alebo ak meno je kratšie a je nastavené <i>Skrátiť</i>, tak sa s menom nič
+nestane. S voľbou <i>Oboje</i> budú všetky mená rovnakej dĺžky.
+</P>
+
+<P>
+<img src='images/mod_length_direction.png' border='0'><br>
+Smer modifikácie dĺžky mena súboru.
+</P>
+
+<P>
+<img src='images/mod_length_pad.png' border='0'><br>
+Toto je znak, ktorý sa používa na zarovnanie.
+Môžte použiť ľubovoľný charakter, s ktorým dokáže pracovať váš počítač.
+</P>
+
+<P>
+<img src='images/mod_length_pad_pos.png' border='0'><br>
+Dovoľuje zvoliť pozíciu, od ktorej sa má vkladať zarovnávací znak.
+Ak je ponechaný na 0, tak to bude od prvého znaku <b>vo vybranom smere</b>.
+Ak je <i>na pozícii</i> iné než 0, tak to funguje rovnako ako
+<i>vložiť na pozíciu</i> (1 = druhý znak, -1 = posledný znak),
+bez ohľadu na zvolený smer.
+</P>
+<br>
+</td></table>
+<br>
+<br>
+
+<BODY>
+</HTML>

@@ -1,0 +1,28 @@
+Copyright (c) 2007 Ianaré Sévi (ianare@gmail.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of the logo,
+to deal with the logo without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the logo,
+and to permit persons to whom the logo is furnished to do so, subject to the
+following conditions:
+
+1) The above copyright notice and this permission notice shall be included in all copies
+   or substantial portions of the Software.
+
+2) You may not use the Métamorphose logo to represent anything else BUT something related
+   to the Métamorphose project. This includes any media.
+   
+   Exceptions to restriction 2:   
+   1) If you modify the logo so it does not closely resemble the original, the
+      restriction is lifted. If in doubt, please contact the original copyright holder.
+      A version modified in this way does not have the restriction, except at your
+      choosing.
+   2) Any use which does not include distribution, sublicensing, selling, or publication
+      does not have the restriction.
+
+THE LOGO IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+LOGO OR THE USE OR OTHER DEALINGS OF THE LOGO.

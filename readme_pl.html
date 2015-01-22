@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Métamorphose Readme</title>
+<style type='text/css'>
+/* Text */
+.OSes{
+	color:#6B6FA1; /* light blue-mauve */
+	font-weight: 700;
+}
+.heading{color:#000099;
+	font-family: Courier, "Courier New", monospace;
+}
+P.copyright{font-size:13px; color:darkgrey}
+.standOut{
+	color:#6E0601;
+	font-size:17;
+}
+.versionTxt{
+	color:#6E0601;
+	letter-spacing:1;
+	font-size:16;
+}
+A:link{color:blue;}
+A:visited{color:#330099;}
+A:hover{color:#CC3333; text-decoration:none;}
+
+/* List */
+ul{
+	margin-top:1px;
+	list-style-type: square;
+}
+ol{list-style-type: decimal;}
+</style>
+</head>
+
+<BODY BGCOLOR='white'>
+
+<center>
+<h2>Métamorphose Readme</h2>
+</center>
+
+<p>
+<b>Uwaga:</b> To jest praktycznie kopia
+<b><a href="http://file-folder-ren.sourceforge.net/index.php?page=Pomoc">strony pomocy</a></b>
+na stronie domowej Métamorphose, więc przejdź tam po najaktualniejsze informacje.<br>
+Jakkolwiek zdaję sobie sprawę, że nie KAŻDY ma dostęp do Internetu, więc proszę bardzo:
+</p>
+<br>
+
+<p>
+<b class='heading'>Instalowanie z pliku setup.exe:</b><br>
+Użytkownicy Win32, którzy nie chcą sobie zawracać głowy kodem źródłowym mogą po prostu <a href="http://sourceforge.net/project/showfiles.php?group_id=146403">pobrać</a>
+plik instalacyjny i uruchomić go. Métamorphose zostanie zainstalowany, jak każdy inny program win 32 i będzie dostępny w menu start.
+</p>
+<br>
+
+<p>
+<b class='heading'>Instalowanie z kodu źródłowego:</b><br>
+<b>Pre-instaluj odpowiednia wersję wxPython (niektóre systemy mogą już posiadać zainstalowane):</b>
+
+<ul>
+<li>Python 2.4 lub 2.5 dostępny na <a href='http://www.python.org/'>www.python.org</a>
+<li>wxPython 2.6 dostępny na <a href='http://www.wxpython.org'>www.wxpython.org</a>.<br>
+Począwszy od wersji 0.3.0, <b>Métamorphose będzie działało WYŁĄCZNIE z wersją Unicode!</b>
+</ul>
+
+<ul>
+  <li>Pakiety Debian potrzebne dla wxPython:
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=libwxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>libwxgtk2.6</a>,
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=python-wxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>python-wxgtk2.6</a>
+  </li>
+</ul>
+<br>
+<b>Instalacja:</b><br>
+Wypakuj źródła do przewidzianej lokalizacji. Jeśli używasz Linuxa przejdź do katalogu i wpisz (jako root):<br>
+<pre>
+$ make all
+</pre>
+<br>
+
+<b>Jak uruchomić:</b><br>
+Uruchom 'metamorphose.py' interpretatorem Pythona w folderze 'metamorphose'.<br>
+Jak w wersji 0.3.0 możesz określić katalog do otwarcia.<br>
+Spacje są dozwolone, więc następujące powinno działać:
+<pre>$ python Metamorphose.py /srv/samba/Windows Lubi Spacje</pre>
+<br>
+<i>Kilka dodatkowych informacji dl Linuxa:</i><br>
+Makefile powinien zająć się wszystkim za ciebie, jest to niezależne od architektury czy dystrybucji.<br>
+Métamorphose zostanie zainstalowane w <i>/usr/share/metamorphose</i>, możesz uruchomić je przy pomocy <pre>$ metamorphose</pre>
+i stronę główną <pre>$ man metamorphose</pre>
+Jeśli używasz <a href="http://www.freedesktop.org/">freedesktop.org</a> menedżera zgodnego z Windows (jak Gnome lub KDE), powinien być wpis w 'Aplikacje -> Akcesoria'.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>Jak usunąć Métamorphose:</b><br>
+<b>Instalator Windows:</b><br>
+Uruchom deinstalatora lub usuń z 'dodaj/usuń programy' w panelu sterowania.<br><br>
+<b>Źródła (wszystkie):</b>
+<ul>
+<li>Począwszy od wersji 0.4.0, usuń pliki określone przez użytkownika tutaj:<br>
+Windows: C:\Documents and Settings\NAZWA_UŻYTKOWNIKA\Dane aplikacji\.metamorphose<br>
+Linux: /home/NAZWA_UŻYTKOWNIKA/.metamorphose<br>
+Mac: /Library/Application Support/.metamorphose</li>
+<li>Usuń stronę główną, jeśli ją zainstalowałeś.</li>
+<li>Usuń pliki źródłowe.</li>
+</ul>
+<b>Źródła (Linux & FreeBSD):</b>
+<pre>
+$ make remove
+$ rm -fr /home/USERNAME/.metamorphose
+</pre>
+
+</p>
+
+<br>
+
+<p>
+<b class='heading'>Pomóż mi pomóc tobie:</b><br>
+Możesz pomóc projektowi Métamorphose zgłaszając uwagi użytkownika.
+<ul>
+<li>Zgłoś <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765156">Raport błędu (w jęz. ang.)</a></li>
+<li>Zgłoś <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765159">Prośbę o funkcję (w jęz. ang.)</a></li>
+</ul>
+</p>
+
+<br>
+<p>
+<b class='heading'>Przetestowane systemy operacyjne:</b><br>
+<b>Uruchomione skompilowane:</b><br>
+<B class='OSes'>Windows 95, 98, ME:</B> Stabilna z Métamorphose v0.2.3a i NIŻSZYMI. Począwszy od 0.3.0 występują usterki jak np. zawieszenie podczas próby dostępu do górnego menu.<br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stabilna, obsługa motywów.<br>
+<br>
+<b>Uruchomione z kodu źródłowego:</b><br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stabilna, obsługa motywów.<br>
+<B class='OSes'>Linux 2.6 - GNOME:</B> Stabilna, obsługa motywów.<br>
+<B class='OSes'>Linux 2.6 - KDE:</B> Stabilna.<br>
+<B class='OSes'>Mac OSx86:</B> Stabilna, obsługa motywów.<br>
+<B class='OSes'>FreeBSD 5.5 - Window Maker:</B> Głównie stabilna. Wybranie zamknięcia podczas zmieniania języka może zablokować aplikację. Ale język zostanie prawidłowo zmieniony po zamknięciu i ponownym uruchomieniu programu. Również rozwijane okienka nie funkcjonują prawidłowo.<br>
+<B class='OSes'>FreeBSD 6.2 - Fluxbox:</B> Stabilna.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>Niektóre znane problemy:</b><br>
+<b>Program blokuje się podczas 'przechodzenia' przez duża ilość plików/folderów:</b><br> Faktycznie się nie blokuje, ale czas do przetworzenia wpisów może być długi jeśli wczytasz wiele wpisów. W trakcie procesu program nie odświeża widoku sprawiając wrażenie że jest zablokowany, choć tak naprawdę pracuje.<br>
+Czas trwania takiego stanu zależy od komputera czy folder jest na dysku lokalnym czy w sieci i oczywiście od ilości przetwarzanych elementów.
+<br><br>
+
+<b>Błąd Pythona - "nie można ustawić lokalizacji dla 'xx_XX' ":</b><br>
+Występuje wyłącznie w Linuxie. Upewnij się, że zainstalowałeś obsługę dla tego języka, gdyż niektóre dystrybucje (np. ubuntu) nie instalują obsługi innych języków niż język instalacji.
+<br><br>
+
+<!-- end page content -->
+
+</body>
+</html>
+

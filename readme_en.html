@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Métamorphose Readme</title>
+<style type='text/css'>
+/* Text */
+.OSes{
+	color:#6B6FA1; /* light blue-mauve */
+	font-weight: 700;
+}
+.heading{color:#000099;
+	font-family: Courier, "Courier New", monospace;
+}
+P.copyright{font-size:13px; color:darkgrey}
+.standOut{
+	color:#6E0601;
+	font-size:17;
+}
+.versionTxt{
+	color:#6E0601;
+	letter-spacing:1;
+	font-size:16;
+}
+A:link{color:blue;}
+A:visited{color:#330099;}
+A:hover{color:#CC3333; text-decoration:none;}
+
+/* List */
+ul{
+	margin-top:1px;
+	list-style-type: square;
+}
+ol{list-style-type: decimal;}
+</style>
+</head>
+
+<BODY BGCOLOR='white'>
+
+<center>
+<h2>Métamorphose Readme</h2>
+</center>
+
+<p>
+<b>Please note:</b> This is basically a copy of the
+<b><a href="http://file-folder-ren.sourceforge.net/index.php?page=Help">help page</a></b>
+on the Métamorphose web site, so go there for the most up-to date
+information.<br>
+However I also realize not EVERYONE has Internet access, so here you go:
+</p>
+<br>
+
+<p>
+<b class='heading'>Installing from setup.exe file:</b><br>
+Win32 users who do not wish to bother with source can simply
+<a href="http://sourceforge.net/project/showfiles.php?group_id=146403">download</a>
+the setup file and run it. Métamorphose will install
+like any other win32 program, and will be accessible from the start menu.
+</p>
+<br>
+
+<p>
+<b class='heading'>Installing from source:</b><br>
+<b>Pre-install appropriate version of wxPython (some systems may already have this):</b>
+
+<ul>
+<li>Python 2.4 or 2.5 available from <a href='http://www.python.org/'>www.python.org</a>
+<li>wxPython 2.6 available from <a href='http://www.wxpython.org'>www.wxpython.org</a>.<br>
+Starting with version 0.3.0, <b>Métamorphose will ONLY work with the Unicode version!</b>
+</ul>
+
+<ul>
+  <li>Debian packages needed for wxPython:
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=libwxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>libwxgtk2.6</a>,
+  <a href='http://packages.debian.org/cgi-bin/search_packages.pl?keywords=python-wxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all'>python-wxgtk2.6</a>
+  </li>
+</ul>
+<br>
+<b>Install:</b><br>
+Unzip sources in desired location. If you are using Linux or freeBSD, navigate to the directory and type (as root):<br>
+<pre>
+$ make all
+</pre>
+<br>
+
+<b>How to run:</b><br>
+Execute 'metamorphose.py' with Python interpreter within the 'metamorphose' folder.<br>
+As of version 0.3.0, you may specify a directory to open up.<br>
+Spaces are allowed, so something like the following will work:
+<pre>$ python Metamorphose.py /srv/samba/Windows Likes Spaces</pre>
+<br>
+<i>Some extra Linux info:</i><br>
+The makefile should take care of everything for you, it is architecture and distro independant.<br>
+Métamorphose will be installed in <i>/usr/share/metamorphose</i>, you can run it with <pre>$ metamorphose</pre>
+and the man page with <pre>$ man metamorphose</pre>
+If you are using a <a href="http://www.freedesktop.org/">freedesktop.org</a> compatible window manager
+(like Gnome or KDE), there should be an entry in 'Applications -> Accessories'.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>How to remove Métamorphose:</b><br>
+<b>Windows Installer:</b><br>
+Run the uninstall or remove from 'add or remove programs' in the control panel.
+<br><br>
+<b>Sources (all):</b>
+<ul>
+<li>Starting with version 0.4.0, remove the user-specific files here:<br>
+Windows: C:\Documents and Settings\USERNAME\Application Data\.metamorphose<br>
+Linux: /home/USERNAME/.metamorphose<br>
+Mac: /Library/Application Support/.metamorphose</li>
+<li>Remove the manpage if you installed it.</li>
+<li>Remove the source files.</li>
+</ul>
+<b>Sources (Linux & FreeBSD):</b>
+<pre>
+$ make remove
+</pre>
+To remove all user files as well:
+<pre>
+$ make remove remusr=1
+</pre>
+
+</p>
+
+<br>
+
+<p>
+<b class='heading'>Help me help you:</b><br>
+You can help the Métamorphose project by submitting user feedback.
+<ul>
+<li>Submit a <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765156">Bug Report</a></li>
+<li>Submit a <a href="http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765159">Feature Request</a></li>
+</ul>
+</p>
+
+<br>
+<p>
+<b class='heading'>Tested Operating Systems:</b><br>
+<b>Run Compiled:</b><br>
+<B class='OSes'>Windows 95, 98, ME:</B> Stable with Métamorphose v0.2.3a and LOWER. Starting
+with 0.3.0 there are some issues, like crashes when trying to access top menus.<br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stable, supports themes.<br>
+<br>
+<b>Run from source:</b><br>
+<B class='OSes'>Windows 2k, XP, 2k3:</B> Stable, supports themes.<br>
+<B class='OSes'>Linux 2.6 - GNOME:</B> Stable, supports themes.<br>
+<B class='OSes'>Linux 2.6 - KDE:</B> Stable.<br>
+<B class='OSes'>Mac OSx86:</B> Stable, supports themes.<br>
+<B class='OSes'>FreeBSD 5.5 - Window Maker:</B> Mostly stable. Choosing to close out when changing language
+may lock up app, but language is changed properly once you kill and restart. Also dropdown
+boxes don't trigger events properly.<br>
+<B class='OSes'>FreeBSD 6.2 - Fluxbox:</B> Stable.<br>
+</p>
+
+<br>
+<p>
+<b class='heading'>Some known issues:</b><br>
+<b>Program locks up when 'walking' a large number of files/folders:</b><br>
+Not really locked up, but the time it takes to process entries can be long if you
+are loading many items. During this process the application doesn't refresh, giving
+the appearance of being locked up but is actually working on stuff.<br>
+The time in this state is dependent on your computer, whether the directory is on a local drive or a
+network share, and of course the number of items.
+<br><br>
+
+<b>Python error - "cannot set locale to 'xx_XX' ":</b><br>
+Applies to Linux desktops only. Make sure you have installed support for that language, as
+some distros (like Ubuntu) do not install language support for any other besides the install
+language.
+</p>
+<br><br>
+
+<!-- end page content -->
+
+</body>
+</html>
+

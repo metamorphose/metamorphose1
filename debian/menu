@@ -1,0 +1,4 @@
+?package(metamorphose):needs="X11" section="Apps/Tools"\
+	title="Métamorphose"\
+	icon="/usr/share/pixmaps/metamorphose.png"\
+	command="metamorphose"

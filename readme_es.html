@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>Leame de Métamorphose</TITLE>
+<style type='text/css'>
+/* Text */
+.OSes{
+	color:#6B6FA1; /* light blue-mauve */
+	font-weight: 700;
+}
+.heading{color:#000099;
+	font-family: Courier, "Courier New", monospace;
+}
+P.copyright{font-size:13px; color:darkgrey}
+.standOut{
+	color:#6E0601;
+	font-size:17;
+}
+.versionTxt{
+	color:#6E0601;
+	letter-spacing:1;
+	font-size:16;
+}
+A:link{color:blue;}
+A:visited{color:#330099;}
+A:hover{color:#CC3333; text-decoration:none;}
+
+/* List */
+ul{
+	margin-top:1px;
+	list-style-type: square;
+}
+ol{list-style-type: decimal;}
+</style>
+</HEAD>
+
+<BODY bgColor=white>
+
+<CENTER>
+<H2>Leame de Métamorphose</H2>
+</CENTER>
+<P>
+Esta es basicamente una copia de la
+<A href="http://file-folder-ren.sourceforge.net/index.php?page=Ayuda"><b>página de ayuda</b></A>
+del sitio web de Métamorphose, así que puede visitar este sitio para obtener información más actualizada.<BR>
+No obstante, como no todos tienen acceso a internet, aquí está: </P>
+<BR>
+
+<P><B class=heading>Instalación desde el archivo setup.exe:</B><BR>
+Aquellos usuarios Win32 quienes no deseen lidiar con los fuentes 
+pueden simplemente <A href="http://sourceforge.net/project/showfiles.php?group_id=146403">descargar</A> 
+el archivo de instalación y correrlo. Métamorphose se instalará como una  aplicación
+win32, y será accesible desde el menú de inicio.
+<p>
+<BR>
+
+<p>
+<B class=heading>Instalación desde las fuentes:</B><BR>
+<B>Instalando la versión apropiada de wxPython (algunos sistemas tal vez ya lo tengan instalado):</B>
+<UL>
+  <LI>Python 2.4 o 2.5 disponible desde <A href="http://www.python.org/">http://www.python.org/</A>
+  <LI>wxPython 2.6 disponible desde <A href="http://www.wxpython.org/">http://www.wxpython.org/</A>.
+  <BR>A partir de la version 0.3.0, <B>Métamorphose trabajará SOLO con la versión unicode!</B></LI>
+</UL>
+<UL>
+  <LI>Los paquetes de Debian necesarios para wxPython son:
+  <A href="http://packages.debian.org/cgi-bin/search_packages.pl?keywords=libwxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all">libwxgtk2.6</A>,
+  <A href="http://packages.debian.org/cgi-bin/search_packages.pl?keywords=python-wxgtk2.6&amp;searchon=names&amp;subword=1&amp;version=all&amp;release=all">python-wxgtk2.6</A>
+  </LI>
+</UL>
+</p>
+<BR>
+
+<P>
+<B>Instalación:</B><BR>
+Descomprima las fuentes en el directorio deseado. Si usted usa Linux o freeBSD, vaya al directorio y escriba (como root):<br>
+<pre>
+$ make all
+</pre>
+<BR>
+
+<B>Como correrlo:</B><BR>
+Ejecute 'Metamorphose.py' con el interprete Python dentro de la carpeta 'Metamorphose'.<BR>
+A partir de la versión 0.3.0, puede especificar un directorio para abrir donde
+comenzar.<BR>
+Los espacios están permitidos, por lo que la siguiente linea es
+perfectamente válida.
+<PRE>
+$ python Metamorphose.py /srv/samba/Windows Gusta Los Espacios
+</PRE><BR>
+
+<I>Alguna información extra para Linux:</I><BR>
+El fichero makefile debería encargarse de todo para usted, es independiente de la arquitectura y de la distribución.<br>
+Métamorphose se instalará en <i>/usr/share/metamorphose</i>, lo puede correr con <pre>$ metamorphose</pre>
+y la página de ayuda (manpage) con <pre>$ man metamorphose</pre>
+Si esta usando un gestor de ventanas compatible con <a href="http://www.freedesktop.org/">freedesktop.org</a> (como Gnome o KDE),
+debería haber una entrada en 'Aplicaciones -> Accesorios'.<br>
+</P>
+<BR>
+
+<P>
+<B class=heading>Como remover Métamorphose:</B><BR>
+<B>Windows:</B><br>
+Corra el desinstalador o remuevalo desde 'Agregar o quitar programas' del panel de control.
+<br><br>
+<B>Fuentes (todos):</B><br>
+Simplemente elimine los archivos descomprimidos durante la instalación.
+<br><br>
+<b>Fuentes (Linux & FreeBSD):</b>
+<pre>
+$ make remove
+</pre>
+Para borrar también todos los archivos de los usuarios :
+<pre>
+$ make remove remusr=1
+</pre>
+</P>
+<BR>
+
+<P>
+<B class=heading>Ayudame ayudate:</B><BR>
+Puede contribuir con el projecto Métamorphose enviando su feedback.
+<UL>
+<LI><A href="http://sourceforge.net/tracker/?func=add&amp;group_id=146403&amp;atid=765156">Reporte un error</A>
+<LI><A href="http://sourceforge.net/tracker/?func=add&amp;group_id=146403&amp;atid=765159">Solicited nuevas características</A></LI>
+</UL>
+</P>
+<BR>
+
+<P><B class=heading>Sistemas Operativos probados:</B><BR>
+<B>Corriendo la distribución Compilada:</B><BR>
+<B class=OSes>Windows 95, 98, ME:</B> Estable con Métamorphose v0.2.3a y MENORES. A partir de
+la versión 0.3.0 hay algunas cosas, como caidas cuando se intenta acceder a los menues superiores.<BR>
+<B class=OSes>Windows 2k, XP, 2k3:</B> Estable, soporta themes.<BR>
+<BR>
+<B>Corriendo desde las fuentes:</B><BR>
+<B class=OSes>Windows 2k, XP, 2k3:</B> Estable, soporta themes.<BR>
+<B class=OSes>Linux 2.6 - GNOME:</B> Estable, soporta themes.<BR>
+<B class=OSes>Linux 2.6 - KDE:</B> Estable.<BR>
+<B class=OSes>Mac OS 10.4:</B> Estable, soporta themes.<BR>
+<B class=OSes>FreeBSD 5.5 - Window Maker:</B>Estable en su mayor parte.
+Eligindo cerrar mientras se cambia el lenguaje puede bloquear la aplicación,
+pero el lenguaje es cambiado adecuadamente una vez que matas el proceso y 
+lo reinicias. Además, cuando los combos se desplegan los eventos no se disparan
+correctamente.<BR>
+<B class='OSes'>FreeBSD 6.2 - Fluxbox:</B> Estable.<br>
+</P><BR>
+<P><B class=heading>Algunas cuestionesa saber:</B><BR>
+<B>La aplicación se bloquea cuando recorre un gran número de archivos/carpetas:</B><BR>
+Realmente no se bloquea, pero el tiempo que tarda el proceso puede ser muy largo si está
+cargando muchos archivos y/o directorios. Durante este proceso la aplicación no refresca,
+dando la apariencia de que se ha bloqueado pero actualmente se está trabajando en esto.<BR>
+El tiempo que permanece en este estado depende del desempeño de el ordenador, de si
+el directorio es local o si es un directorio compartido de una red, y por supuesto
+del número de items a procesar.
+<BR><BR>
+
+<b>Python error - "cannot set locale to 'xx_XX' ":</b><BR>
+Aplicable en desktops Linux solamente. Verifique que el idioma sea admitido por el sistema, porque
+algunas distribuciones (como Ubuntu) no instalan soporte para otros idiomas excepto los especificados
+durante la instalación.
+</P>
+<BR>
+<BR>
+Traducido por Lucas Ontivero y Maria-Isabel Silva.
+<BR>
+<BR>
+</BODY></HTML>

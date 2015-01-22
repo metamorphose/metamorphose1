@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'><b>
+Tu je niekoľko ukážkových príkladov použitia Métamorphose.</b></font>
+<br><br>
+Slová písané <i>kurzívou</i> odkazujú na tlačítka, vstupné polia, zaškrtávacie polia, atď ...<br>
+Pokiaľ nie je inak špecifikované, všetky príklady predpokladajú, že v záložke <i>Zberač</i> sú vybrané
+(jedna alebo viac) položiek na premenovanie.
+<br>
+Ak je zaškrtnutý <i>Automatický Náhľad</i> tak akékoľvek prípadné zmeny budú okamžite zobrazované.
+Inak je potrebné pre zobrazenie zmien stlačiť tlačítko <i>Náhľad</i>.
+<br><br>
+<p>
+<h4><i>- Hlavný -</i></h4>
+<b>Vloženie číselnej poradovej postupnosti na začiatok existujúceho mena súboru/adresára:</b><br>
+Zaškrtnite políčko <i>prefix</i>. Kliknite na tlačítko <i>číslovanie</i> na hornom panele.
+Mal by sa objaviť text ':číslo:' vo vstupnom <i>prefix</i> poli, a nové meno každej vybranej
+položky bude obsahovať číselný prefix.
+</p>
+
+<p>
+<b>Nahradenie celého povodné meno: najprv číselná sekvencia a potom text:</b><br>
+Zaškrtnite <i>Hľadať</i>. Nechajte pole <i>Text (prázdne pre všetko)</i> prázdne.
+Stlačte tlačítko <i>číslovanie</i>, a napíšte nejaký text. Pole by malo vyzerať asi takto:
+':číslo: nejaký uživateľom napísaný text'.
+</p>
+
+<p>
+<b>Odstrániť všetky medzery:</b><br>
+Zaškrtnite <i>Hľadať</i>. Kliknite na pole <i>Text (prázdne pre všetko)</i> field, a potom
+stlačte medzeru na klávesnici. Nechajte pole <i>Nahradiť s (prázdne pre zmazanie):</i> prázdne. 
+</p>
+
+<p>
+<b>Odstrániť všetky neabecedné znaky:</b><br>
+Zaškrtnite <i>Hľadať</i>. Vedľa <i>Množiny znakov:</i> zaškrtnite políčka
+<i>Čokoľvek, len nie:</i> a <i>[a-z]</i>.
+</p>
+
+<p>
+<b>Zmeniť všetky veľké písmená na malé:</b><br>
+Zaškrtnite <i>Hľadať</i>. Pole <i>Text (prázdne pre všetko)</i> nechajte prázdne.
+Kliknite na tlačítko <i>upraviť</i>, a potom z menu vyberte <i>malé písmená</i>.
+</p>
+
+<p>
+<b>Zmeniť príponu súboru na malé písmená:</b><br>
+Postup je rovnaký ako pri zmene veľkých písmen na malé až na to,
+že políčko <I>Meno</I> musí byť odškrtnuté a <I>Prípona</I> zaškrtnutá vedľa <I>Operácie konajú na:</I>.
+Políčka su naľavo hore.
+</p>
+
+<p>
+<b>Presunúť prvé 3 znaky mena súboru na koniec mena súboru"</b><br>
+Zaškrtnite <i>Hľadať</i>, potom vyberte <I>Pozícia</I> a nastavte <I>Dĺžka</I> na '3'.
+Potom vyberte <I>Posunúť</I> a nastavte <I>na pozíciu</I> na '-1'.
+</p>
+
+<p>
+<b>Premenovať MP3 súbor na: číslo_názov:</b><br>
+Zaškrtnite <i>Hľadať</i>. Pole <i>Text (blank for all)</i> nechajte prázdne.
+Vpravo hore vedľa tlačítka <i>id3:</i> z menu vyberte <i>stopa</i>.
+Stlačte tlačítko <i>id3:</i>, potom stlačte medzeru na klávesnici.
+Teraz z menu vyberte <i>názov</i> a znovu stlačte <i>id3</i>.
+Pole <i>Nahradiť s</i> by teraz malo obsahovať ':track:_:title:'.
+Alternatívne sa dá použiť číslovanie namiesto získavania čísla z ID3 informácie zo súboru.
+</p>
+
+<br><br>
+</p>
+<h4><i>Číslovanie</i></h4>
+<b>Číselná postupnosť: I, III, V, I, III, V ... :</b><br>
+Kliknite na <i>Rímska cifra</i>, nastavte <i>Počítať po:</i> na 2, and <i>Resetovať každých</i> na 3.
+</p>
+
+<p>
+<b>Číselná postupnosť: W, V, U, T, S, R ... :</b><br>
+Kliknite na <i>Abecedne</i>, vyberte <i>Veľké písmená</i>, nastavte <i>Začínať na</i> na 23,
+a <i>Smer počítania:</i> na <i>-</i>.
+</p>
+
+
+<br><br>
+<p>
+<h4>Pokročilá funkcionalita:</h4>
+<b>Vložiť formátovaný dátum z EXIF tag obrázku (jpg, tiff, jtif):</b><br>
+V <i>Hlavný</i> kliknite na tlačítko <i>dátum</i> pre vloženie času. V <i>Dátum a Čas</i>
+zaškrtnite <i>Použiť z položky</i> a vyberte <i>EXIF tag obrázku</i>.
+Potom môžte použiť všetky nastavenia na konfiguráciu formátu.
+Pokiaľ súbor neobsahuje validný tag, tak dátum nebude do nového mena vložený.
+</p>
+
+<p>
+
+<b>Získať správne kódovanie znakov s použitím ID3 tagov:</b><br>
+Toto rieši problémy pri sťahovaní hudby a z "01 - La mauvaise réputation.mp3"
+sa stane "01 - La mauvaise rÃ©putation.mp3".
+Toto sa stane, keď kódovanie znakov názvu skladby sa nezhoduje s použitím
+kódovaním súborového systému, na ktorý bol súbor uložený.
+Métamorphose podporuje všetky bežné kódovania, a aj veľa neobvyklých.
+Pre tento príklad budeme predpokladať, že stiahnuté súbory sú v latin_1,
+a súborový systém používa UTF-8.
+<br>
+V <i>- Hlavný -</i>, kliknite na <i>Hľadať</i>, potom na <i>Pozícia</i>.
+Teraz nastavte prvé číslo na 5 a to druhé na 255.
+Ďalej, vyberte <i>Nahradiť</i>, vyberte <i>názov</i> vedľa tlačítka <i>ID3</i>
+a kliknite tlačítko. Toto nahradí všetok text za "01 - " s názvom skladby
+tak, ako je uvedený v mp3 súbore. Môže sa vyskytnúť "id3 encoding error".
+Ale to nevadí. V prvom panele menu <i>Preferencie</i>
+(<i>Editovať -> Preferencie</i>), vyberte príslušné kódovanie názvu súboru,
+v tomto príklade by bola vybraná <i>Západná Európa</i> a kódovanie
+by bolo latin_1.<br>
+
+Náhľad zbehne hneď ako sa stlačí <i>OK</i>.
+</p>
+
+<p>
+<b>Chcem prečíslovať moje .mp3-ky v inom poradí (dobré pre mixy):</b><br>
+V paneli <i>Zberač</i> kliknite na <i>Prehliadať</i>, vyberte adresár,
+a stlačte OK. Ďalej v paneli <i>- Hlavný -</i> zvolte <i>Prefix</i>
+a kliknite tlačítko <i>číslovanie</i>.
+Teraz vyberte <i>Hľadať</i> a kliknite na  <i>Reg-Výr</i>
+a z <i>Množiny znakov</i> vyberte <i>[0-9]</i>.
+Toto funguje iba ak sú názvy skladieb očíslované.
+Iný spôsob je vybrať <i>Pozícia</i> namiesto <i>Množiny znakov</i>
+a nastaviť <i>Dĺžku</i> na predpokladaný počet znakov tvoriacich číslo skladby,
+a <i>Pozíciu</i>, kde sa nachádza. 
+</p>
+
+
+</BODY>
+</HTML>

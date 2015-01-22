@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//IT">
+<HTML>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<p>
+<b>I seguenti caratteri sono riconosciuti per creare una formattazione:</b>
+<br>
+<table border='0' cellpadding='1' cellspacing='8'>
+<tr><th valign='top'><b>%a</b></th><td>Nome del giorno della settimana abbreviato in accordo con i parametri locali</td></tr>
+<tr><th valign='top'><b>%A</b></th><td>Nome completo del giorno della settimana in accordo con i parametri locali</td></tr>
+<tr><th valign='top'><b>%b</b></th><td>Nome del mese abbreviato in accordo con i parametri locali</td></tr>
+<tr><th valign='top'><b>%B</b></th><td>Nome completo del mese in accordo con i parametri locali</td></tr>
+<tr><th valign='top'><b>%c</b></th><td>Rappresentazione preferita di data e orario per le attuali impostazioni locali</td></tr>
+<tr><th valign='top'><b>%C</b></th><td>numero del secolo (l'anno diviso 100 e troncato in un intero, intervallo tra 00 e 99)</td></tr>
+<tr><th valign='top'><b>%d</b></th><td>giorno del mese come numero decimale (intervallo tra 01 e 31)</td></tr>
+<tr><th valign='top'><b>%D</b></th><td>come %m/%d/%y</td></tr>
+<tr><th valign='top'><b>%e</b></th><td>giorno del mese come numero decimale, un singolo carattere è preceduto da uno spapzio (intervallo tra ' 1' e '31')</td></tr>
+<tr><th valign='top'><b>%g</b></th><td>come %G, ma senza il secolo.</td></tr>
+<tr><th valign='top'><b>%G</b></th><td>L'anno a 4 cifre corrispondente al numero di setitmana ISO (vedi %V). Questa ha lo stesso formato e valore di %Y, eccetto che se il numero di settimana ISO appartiene al precedente o prossimo anno, è invece utilizzato l'anno attuale.</td></tr>
+<tr><th valign='top'><b>%h</b></th><td>come %b</td></tr>
+<tr><th valign='top'><b>%H</b></th><td>ora come numero decimale usando il sistema a 24 ore (intervallo tra 00 e 23)</td></tr>
+<tr><th valign='top'><b>%I</b></th><td>ora come numero decimale usando il sistema a 12 ore (intervallo tra 01 e 12)</td></tr>
+<tr><th valign='top'><b>%j</b></th><td>giorno dell'anno come numero decimale (intervallo tra 001 e 366)</td></tr>
+<tr><th valign='top'><b>%m</b></th><td>mese come numero decimale (intervallo tra 01 e 12)</td></tr>
+<tr><th valign='top'><b>%M</b></th><td>minuto come numero decimale</td></tr>
+<tr><th valign='top'><b>%n</b></th><td>carattere di nuova linea</td></tr>
+<tr><th valign='top'><b>%p</b></th><td>entrambi `am' o `pm' accordati a un valore di tempo dato, o alle stringhe corrispondenti per le impostazioni locali</td></tr>
+<tr><th valign='top'><b>%r</b></th><td>orario in notazione a.m. e p.m</td></tr>
+<tr><th valign='top'><b>%R</b></th><td>orario nella notazione a 24 ore</td></tr>
+<tr><th valign='top'><b>%S</b></th><td>secondi come numero decimale</td></tr>
+<tr><th valign='top'><b>%t</b></th><td>Carattere di tabella</td></tr>
+<tr><th valign='top'><b>%T</b></th><td>orario attuale, identico a %H:%M:%S</td></tr>
+<tr><th valign='top'><b>%u</b></th><td>giorno della settimana come numero decimale [1,7], dove 1 rappresenta il Lunedì</td></tr>
+<tr><th valign='top'><b>%U</b></th><td>numero della settimana dell'anno in corso come numero decimale, iniziando dalla prima Domenica come primo giorno della prima settimana</td></tr>
+<tr><th valign='top'><b>%V</b></th><td>Il numero di settimana ISO 8601:1988 dell'anno attuale come numero decimale, intervallo tra 01 e 53, dove la settimana 1 è la prima settimana che ha almeno 4 giorni dell'attuale anno, e con il Lunedì come primo giorno della settimana. (Utilizza %G o %g per l'anno componente che corrisponde al numero di settimana per il timestamp specificato.)</td></tr>
+<tr><th valign='top'><b>%W</b></th><td>numero della settimana dell'attuale anno come numero decimale, partendo con il primo Lunedì come primo giorno della prima settimana</td></tr>
+<tr><th valign='top'><b>%w</b></th><td>giorno della settimana come decimale, dove la Domenica è 0</td></tr>
+<tr><th valign='top'><b>%x</b></th><td>visualizzazione della data preferita dalle impostazioni del sistema locale senza orario</td></tr>
+<tr><th valign='top'><b>%X</b></th><td>visualizzazione dell'orario preferito dalle impostazioni del sistema locale senza data</td></tr>
+<tr><th valign='top'><b>%y</b></th><td>anno come numero decimale senza secolo (intervallo tra 00 e 99)</td></tr>
+<tr><th valign='top'><b>%Y</b></th><td>anno come numero decimale incluso il secolo</td></tr>
+<tr><th valign='top'><b>%Z</b></th><td>fuso orario o abbreviazione</td></tr>
+<tr><th valign='top'><b>%%</b></th><td>il carattere `%'</td></tr>
+</table>
+<br><br>
+
+<i>Ecco un esempio:</i><br>
+<b>Input:</b> %a, %d %b %Y %H.%M.%S +0000<br>
+<b>Risultato:</b> Tue, 06 Feb 2007 20.18.04 +0000<br>
+
+<br>
+<b>NOTE:</b> Non si possono usare i due punti « : » in quanto sono usati da Métamorphose per segnalare la partenza di operazioni speciali.
+</body>
+</html>

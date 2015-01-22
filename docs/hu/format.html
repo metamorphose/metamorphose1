@@ -1,0 +1,58 @@
+<meta http-equiv="Content-Type" content="text/html"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</head>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<p>
+<b>Az alábbi karakterekkel lehet formázni:</b>
+<br>
+<table border='0' cellpadding='1' cellspacing='8'>
+<tr><th valign='top'><b>%a</b></th><td>hét napja, rövidítve</td></tr>
+<tr><th valign='top'><b>%A</b></th><td>hét napja, teljes</td></tr>
+<tr><th valign='top'><b>%b</b></th><td>hónap neve, rövidítve</td></tr>
+<tr><th valign='top'><b>%B</b></th><td>hónap neve, teljes</td></tr>
+<tr><th valign='top'><b>%c</b></th><td>dátum és idő alapértelmezett formátumban</td></tr>
+<tr><th valign='top'><b>%C</b></th><td>évszám 2 utolsó jegy nélkül (trunc(év/100), értéke 00 és 99 között)</td></tr>
+<tr><th valign='top'><b>%d</b></th><td>nap, 2 számjegy ("01" .. "31")</td></tr>
+<tr><th valign='top'><b>%D</b></th><td>azonos %m/%d/%y-val</td></tr>
+<tr><th valign='top'><b>%e</b></th><td>nap, 2 karakter, extra szóközzel az egyjegyű számok előtt (" 1" .. "31")</td></tr>
+<tr><th valign='top'><b>%g</b></th><td>mint a %G, csak évszázad nélkül</td></tr>
+<tr><th valign='top'><b>%G</b></th><td>A 4-jegyű évszám, ami az ISO hétszámhoz tartozik (lásd a %V opciót). Ez azonos formátumú és értékű, mint a %Y, kivéve, hogy ha az ISO hétszám az előző, vagy a következő évhez tartozik, akkor azzal az évet adja.</td></tr>
+<tr><th valign='top'><b>%h</b></th><td>ugyanaz, mint a %b</td></tr>
+<tr><th valign='top'><b>%H</b></th><td>óra, 24-órás formátumban, 2 számjeggyel ("00" .. "23")</td></tr>
+<tr><th valign='top'><b>%I</b></th><td>óra, 12-órás formátumban, 2 számjeggyel ("01" .. "12")</td></tr>
+<tr><th valign='top'><b>%j</b></th><td>év napja, 3 számjegy ("001" .. "366" !!!)</td></tr>
+<tr><th valign='top'><b>%m</b></th><td>hónap, számmal ("01" .. "12") [van kitöltő szóköz]</td></tr>
+<tr><th valign='top'><b>%M</b></th><td>perc, [2 számjegy]</td></tr>
+<tr><th valign='top'><b>%n</b></th><td>újsor karakter</td></tr>
+<tr><th valign='top'><b>%p</b></th><td>`am' vagy `pm', annak megfelelően, hogy az adott időpont délelőtt, vagy délután van-e</td></tr>
+<tr><th valign='top'><b>%r</b></th><td>időpont 12 órás formátumban [pl.: 12:00:00 AM]</td></tr>
+<tr><th valign='top'><b>%R</b></th><td>időpont 24 órás formátumban [pl.: 00:00][Itt nincs másodperc!!!]</td></tr>
+<tr><th valign='top'><b>%S</b></th><td>másodperc [2 számjegy]</td></tr>
+<tr><th valign='top'><b>%t</b></th><td>tabulátor</td></tr>
+<tr><th valign='top'><b>%T</b></th><td>idő, azonos a %H:%M:%S-val</td></tr>
+<tr><th valign='top'><b>%u</b></th><td>hét napja, számmal [1,7], az 1 a hétfőt jelentiFigyelemÚgy tűnik, hogy Sun Solarison a vasárnap az 1-es, holott az ISO 9889:1999 (az aktuális C standard) világosan megmondja, hogy hétfőnek kell lennie.</td></tr>
+<tr><th valign='top'><b>%U</b></th><td>az aktuális év hányadik hetében járunk, a hét vasárnappal kezdődik, vagyis az "01" hét január első vasárnapján kezdődik. [Az első hét előtti napokat "00" hétnek jelzi!!!]</td></tr>
+<tr><th valign='top'><b>%V</b></th><td>Az ISO 8601:1988 hétszám ("01" .. 53), ahol az az első hét, amelynek legalább 4 napja van az újévben. A hét első napja hétfő. Használd a %G-t vagy a %g-t, ha egy év kell, ami egy időbélyeg hétszámához tartozik. [???] [Helyesen kezeli az előző évből átnyúló heteket is]</td></tr>
+<tr><th valign='top'><b>%W</b></th><td>év hete, az év első hétfőjén kezdődik az "01" hét</td></tr>
+<tr><th valign='top'><b>%w</b></th><td>hét napja számmal, a vasárnap a 0</td></tr>
+<tr><th valign='top'><b>%x</b></th><td>alapértelmezett dátumformátum idő nélkül</td></tr>
+<tr><th valign='top'><b>%X</b></th><td>alapértelmezett időpontformátum dátum nélkül</td></tr>
+<tr><th valign='top'><b>%y</b></th><td>év 2 számjeggyel ("00" .. "99")</td></tr>
+<tr><th valign='top'><b>%Y</b></th><td>év, évszázaddal együtt</td></tr>
+<tr><th valign='top'><b>%Z</b></th><td>időzóna neve [3 betű]</td></tr>
+<tr><th valign='top'><b>%%</b></th><td>a `%' karakter</td></tr>
+</table>
+<br><br>
+
+<i>Íme egy példa:</i><br>
+<b>Bemenet:</b> %a, %d %b %Y %H.%M.%S +0000<br>
+<b>Eredmény:</b> k, 06 febr 2007 21.02.04 +0000<br>
+
+<br>
+<b>MEGJEGYZÉS:</b> A « : »  tilos, mert ezt a Métamorphose különleges
+műveletek kezdetekor használja.
+</body>
+</html>

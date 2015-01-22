@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FEFEF6" LINK="#0000FF" VLINK="#0000FF" ALINK="#000088">
+
+<font color='blue'><b>
+Here are some examples which illustrate some of the things you can do with Métamorphose.</b></font>
+<br><br>
+Words in <i>italic</i> refer to buttons, fields, checkboxes, etc...<br>
+Unless specified otherwise, all the following examples assume you have already selected one or more
+items to be renamed from the <i>picker</i> tab.
+<br>
+If you leave <i>Auto Preview</i> checked, any changes made will instantly display results.
+Otherwise you will need to press the <i>Preview</i> button to display changes.
+
+<br><br>
+<p>
+<h4><i>- Main -</i> panel:</h4>
+<b>Insert numbering sequence at begining of existing filename:</b><br>
+Check the <i>prefix</i> checkbox. Click on the <i>numbering</i> button at top of panel.
+You should now have the text ':numb:' in the <i>prefix</i> box, and your items will
+have an auto-padded numbering sequence as a prefix.
+</p>
+
+<p>
+<b>Replace entire name like so: numbering sequence then text:</b><br>
+Check the <i>Search</i> checkbox. Leave the <i>Text (blank for all)</i> field blank.
+Click the <i>numbering</i> button, now type some text. The field should look like this:
+':numb: some text I typed in'.
+</p>
+
+<p>
+<b>Remove all spaces:</b><br>
+Check the <i>Search</i> checkbox. Click in the <i>Text (blank for all)</i> field, then
+press the spacebar on your keyboard. Leave the <i>Replace with (blank to delete):</i> field blank. 
+</p>
+
+<p>
+<b>Remove all non-alphabetical characters:</b><br>
+Check the <i>Search</i> checkbox. Click the <i>Character sets:</i> radio button. Check
+<i>Anything but:</i> and <i>[a-z]</i>.
+</p>
+
+<p>
+<b>Convert entire name to lowercase:</b><br>
+Check the <i>Search</i> checkbox. Leave blank the field <i>Text (blank for all)</i>.
+Click the <i>Modify</i> radio button, then select <i>lowercase</i> from the drop-down menu.
+</p>
+
+<p>
+<b>Convert file extension to lowercase:</b><br>
+Same as above but uncheck <I>name</I> and check <I>extension</I> for <I>Operations act on:</I>
+on the top left of the panel.
+</p>
+
+<p>
+<b>Move first 3 characters of name to end of name:</b><br>
+Check the <i>Search</i> checkbox, then the <I>Position</I> radio button. On the Position line,
+enter '3' in the <I>Length</I> field.
+Now check the <I>Move</I> radio button, and use '-1' as the <I>Position</I>.
+</p>
+
+<p>
+<b>Rename MP3 file like so: number_title:</b><br>
+Check the <i>Search</i> box. Leave blank the field <i>Text (blank for all)</i>.
+On the top of the panel, select <i>track</i> from the dropdown menu next to the <i>id3</i> button. Click the
+<i>id3</i> button, now type the _ character on the keyboard, then select <i>title</i> from the id3 dropdown menu,
+and click the <i>id3</i> button again. The field should now look like this: ':track:_:title:'. Alternatively
+you could use numbering instead of getting the track number from the file.
+</p>
+
+
+<br><br>
+</p>
+<h4><i>Numbering</i> panel:</h4>
+<b>Count like this: I, III, V, I, III, V ... :</b><br>
+Click on <i>Roman Numeral</i>, set the <i>Count by:</i> value to 2, and set the <i>Reset</i> value to 2.
+</p>
+
+<p>
+<b>Count like this: W, V, U, T, S, R ... :</b><br>
+Click on <i>Alphabetical</i>, select <i>Uppercase</i>, set starting number to 23, and set <i>Count:</i> to <i>down</i>
+</p>
+
+
+<br><br>
+<p>
+<h4>Bit more advanced stuff:</h4>
+<b>Insert formated date from image (jpg, tiff, jtif) EXIF tag:</b><br>
+Click the <i>Date</i> button to insert a date. In the <i>Date and Time</i> panel, go to
+<i>Use the item's</i> and select <i>image EXIF tag</i>. You can then use all the settings available in
+the panel to configure the date's format. If the files do not contain a valid tag, nothing will be inserted.
+</p>
+
+<p>
+
+<b>Retrieve proper character encoding used in id3 tags:</b><br>
+This will fix problems when you download music and "01 - La mauvaise réputation.mp3" becomes "01 - La mauvaise rÃ©putation.mp3". This will happen
+when the character encodings don't match between the file and the system. Métamorphose supports all common encodings, and a lot of
+rare ones too. For this example however we will continue to assume the files are in latin_1, and the system is in UTF-8.
+<br>
+In <i>- Main -</i>, click on <i>Search</i>, then <i>Position</i>. Now set the first number to 5,
+the other to 255. Next, select <i>Replace</i>, select <i>title</i> next to the <i>ID3</i> button
+and click the button. This will replace everything after the "01 - " with the title of the song as defined in the mp3 file. There might be an
+"id3 encoding error". No matter. In the first panel of the <i>Preferences</i> menu
+(<i>Edit -> Preferences</i>), select the proper encoding for the file, in this example <i>Western Europe</i> would
+be selected and latin_1 would be set.<br>
+
+Preview runs as soon as <i>OK</i> is pressed.
+</p>
+
+<p>
+<b>I want to renumber my .mp3's in a different order (good for mixes):</b><br>
+In <i>Picker</i> panel click on <i>browse</i>, select folder, and press OK.
+<br>
+Next, go to the <i>Main panel</i>, select <i>Prefix</i> and click the <i>numbering</i> button. Now
+select <i>Search</i>, then click on <i>Character Sets</i>, and finally choose <i>[0-9]</i>.<br>
+This only works if the song titles have no numbers in them. Other way is to select <i>Position</i> instead
+of <i>Character Sets</i> and set <i>Length</i> to however many characters are taken up by the track number,
+and <i>Position</i> to where they occur.
+<br>
+Finally go to the <i>Numbering panel</i>, set <i>Item Sorting</i> to <i>Manually</i> : this will allow you to
+change the numbering of items using the <i>arrow buttons</i>. CHanges to names will appear in real time.
+</p>
+
+
+</BODY>
+</HTML>
