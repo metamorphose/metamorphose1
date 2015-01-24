@@ -54,7 +54,7 @@ import locale
 import EXIF
 import calendar
 
-# notebok windows:
+# notebook windows:
 import picker
 import main
 import numbering
@@ -589,7 +589,7 @@ class main_window(wx.Frame):
 
 
 ##### MISC STUFF: ##############################################################
-    # Little functions to make repetetive stuff easier to implement.
+    # Little functions to make repetitive stuff easier to implement.
 
     # get version info from file
     def getVersion(self):
@@ -916,18 +916,13 @@ class main_window(wx.Frame):
 
         def createNewPreferences(prefFile):
             prefFile.truncate(0)
-            header = u"Métamorphose version %s\nManualy editing this text file is futile, use the preferences menu.\n\n"%self.version
+            header = u"Métamorphose version %s\n" % self.version
+            header += u"Manually editing this text file is futile, use the preferences menu.\n\n"
             # make the file
             prefFile.write(header)
             for key, value in preferences.items():
                 prefFile.write("%s%s\n"%(key, value))
             prefFile.write(u"\n~ End Of File ~\n\n")
-            # say what happened
-            msg = _(u"First use or missing configuration file.\n\nLoading default settings.")
-            title = _(u"Preferences")
-            dlg = wx.MessageDialog(self, msg, title, wx.CAPTION|wx.OK|wx.ICON_EXCLAMATION)
-            dlg.ShowModal()
-            dlg.Destroy()
 
         # make sure the file exist and is readable
         try:
@@ -961,7 +956,7 @@ class main_window(wx.Frame):
                             pass
             prefFile.close()
 
-        # use windows-compatible filenames ?
+        # use windows-compatible file names?
         if preferences[u'useWinChars=']:
             preferences[u'bad_chars'] = (u'\\',u'/',u':',u'*',u'?',u'"',u'>',u'<',u'|')
         else:

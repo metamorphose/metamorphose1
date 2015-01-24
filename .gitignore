@@ -1,0 +1,46 @@
+# OS generated #
+._*
+.DS_Store*
+.Trash-*
+*~
+.Trashes
+Thumbs.db
+.directory
+
+# Python
+*.py[co]
+
+# Editors
+*swp
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# archives
+*.gz
+*.zip
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+# Translations
+*.mo
+
+# IDEs
+.mr.developer.cfg
+.idea
+nbproject
