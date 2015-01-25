@@ -4,7 +4,7 @@
 # This is the about dialog.
 
 """
-Copyright (C) 2005-2008 Ianaré Sévi
+Copyright (C) 2005-2010 Ianaré Sévi
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -36,8 +36,7 @@ def create(parent):
 class About(wx.Dialog):
     def sizer(self):
         self.bottomRow = wx.BoxSizer(wx.HORIZONTAL)
-        self.bottomRow.Add(self.bugReport,0,wx.ALIGN_CENTER|wx.RIGHT,15)
-        self.bottomRow.Add(self.featureRequest,0,wx.ALIGN_CENTER)
+        self.bottomRow.Add(self.bugReport,0,wx.ALIGN_CENTER)
 
         mainSizer = self.mainSizer = wx.BoxSizer(wx.VERTICAL)
         mainSizer.Add(self.CLOSE,0,wx.ALIGN_CENTER|wx.BOTTOM|wx.TOP,5)
@@ -81,7 +80,7 @@ class About(wx.Dialog):
         self.CLOSE.Bind(wx.EVT_BUTTON, self.OnCLOSEButton, id=wxID_ABOUTCLOSE)
 
         self.copyright = wx.StaticText(id=wxID_ABOUTCOPYRIGHT,
-              label=u"Copyright © 2005-2008 Ianaré Sévi", name=u'copyright',
+              label=u"Copyright © 2005-2010 Ianaré Sévi", name=u'copyright',
               parent=self, style=0)
         self.copyright.SetFont(wx.Font(fontSize+1, fontFamily, fontStyle, wx.BOLD, False,
               u'Times New Roman'))
@@ -129,21 +128,13 @@ class About(wx.Dialog):
                         name=u'contributors', size=wx.Size(335,145),
                         style=wx.TE_MULTILINE | wx.TE_READONLY)
 
-        self.bugReport = hl.HyperLinkCtrl(self, wxID_ABOUTLINK, _(u"Bug Report"),
-              URL=u'http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765156', style=0)
+        self.bugReport = hl.HyperLinkCtrl(self, wxID_ABOUTLINK, _(u"Bug Report") + u' / ' + _(u"Feature Request"),
+              URL=u'https://github.com/metamorphose/metamorphose1/issues', style=0)
         self.bugReport.SetToolTip(wx.ToolTip(_(u"Submit a bug report.")))
-
-
-        self.featureRequest = hl.HyperLinkCtrl(self, wxID_ABOUTLINK, _(u"Feature Request"),
-              URL=u'http://sourceforge.net/tracker/?func=add&group_id=146403&atid=765159', style=0)
-        self.featureRequest.SetToolTip(wx.ToolTip(_(u"Submit a feature request.")))
-
 
         self.donate = hl.HyperLinkCtrl(self, wxID_ABOUTDONATE, '',
           URL=u'http://sourceforge.net/donate/index.php?group_id=146403', style=0)
         self.donate.Show(False)
-
-
 
 
     def __init__(self, parent):
